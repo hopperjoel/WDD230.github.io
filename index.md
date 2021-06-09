@@ -18,7 +18,7 @@
         <li>Lesson 01:<a href="" target = "_blank">Course Assignments Portal</a></li>
 
     <img src="https://github.com/hopperjoel/WDD230.github.io/blob/master/Joel%20Portrait.jpg" alt="Portrait of author">
-    <img src="C:\Users\hoppe\OneDrive\Documents\BYU\WDD230\WDD230.github.io/Joel Portrait.jpg alt="Portrait of author">
+    <img src="C:\Users\hoppe\OneDrive\Documents\BYU\WDD230\WDD230.github.io/Joel Portrait.jpg" alt="Portrait of author">
  </main>
  <footer>
  <p class="footer-main">
