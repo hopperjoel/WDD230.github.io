@@ -4,8 +4,10 @@
 body {
     font-family: 'Arimo', sans-serif;
     display: block;
-    margin:0 auto;
+    margin: auto;
     max-width: 700px;
+    height: 100%;
+    line-height: 1.5;
 }
 header {
     font-family: 'Noto Sans TC', sans-serif;
