@@ -18,6 +18,7 @@ main {
 }
 header img {
     float: right;
+    float:top;
 }
 footer {
     background-color: #0081a7;
