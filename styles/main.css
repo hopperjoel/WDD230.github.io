@@ -24,7 +24,8 @@ header img {
     float: right;
     box-shadow: 0px 0px 10px 5px grey;
     max-height: 300px;
-    margin: 
+    margin-right: 20px;
+    margin-top: -30px;
 }
 footer {
     background-color: #0081a7;
@@ -39,5 +40,5 @@ footer {
     font-size: 12px;
     padding-top: 5px;
     margin-top: -10px;
-    color: #FDFCDC
+    color: #FDFCDC;
 }
