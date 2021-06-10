@@ -4,29 +4,40 @@
 body {
     font-family: 'Arimo', sans-serif;
     display: block;
-    width: auto;
-    height: auto;
+    margin:0 auto;
+    max-width: 900px;
 }
 header {
     font-family: 'Noto Sans TC', sans-serif;
     background-color: #0081a7;
+    padding:2px;
     text-align:center;
+    font-size: 25px;
+    border-radius: 8px;
 }
 main {
     background: white;
     font-size: 20px;
+    margin: 20px;
 }
 header img {
     float: right;
-    float:top;
+    box-shadow: 0px 0px 10px 5px grey;
+    max-height: 300px;
+    margin: 
 }
 footer {
     background-color: #0081a7;
     text-align:center;
+    padding: 5px;
+    margin-top: 2em;
 }
 .footer-main {
     font-size: 16px;
 }
-.footer-update {
+#lastmod {
     font-size: 12px;
+    padding-top: 5px;
+    margin-top: -10px;
+    color: #FDFCDC
 }
