@@ -16,7 +16,7 @@
   max-width: 1200px;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (min-width: 300px) {
   .main-grid {
     grid-template-areas:
       "section-1"
@@ -24,14 +24,14 @@
       "section-3";
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (min-width: 900px) {
   .main-grid {
     grid-template-areas:
       "section-1 section-2"
       "section-3 section-3"
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .main-grid {
     grid-template-areas:
       "section-1 section-2 section-3"
@@ -49,6 +49,3 @@ p {
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 15px;
 }
-.section {
-  align-self: center;
-  }
