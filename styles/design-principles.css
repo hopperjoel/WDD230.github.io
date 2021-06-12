@@ -1,38 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
-#s1 {
-  grid-area:section-1;
-}
-#s2 {
-  grid-area:section-2;
-}
-#s3 {
-  grid-area:section-3;
+.section {
+  grid-area: section;
 }
 .main-grid {
   display: grid;
+  grid-gap: 10px;
+  max-width: 1200px;
 }
 
 @media screen and (min-width: 300px ) {
   .main-grid {
     grid-template-areas:
-      'section-1'
-      'section-2'
-      'section-3';
+      "section"
+      "section"
+      "section";
   }
 }
 @media screen and (min-width: 900px ) {
   .main-grid {
     grid-template-areas:
-      'section-1 section-2'
-      'section-3';
+      "section section"
+      "section"
   }
 }
 @media screen and (min-width: 1200px ) {
   .main-grid {
     grid-template-areas:
-      'section-1 section-2 section-3';
+      "section section section"
   }
 }
 h2 {
