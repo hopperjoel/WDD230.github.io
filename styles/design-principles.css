@@ -12,7 +12,6 @@
 }
 .main-grid {
   display: grid;
-  grid-template-areas: "section-1 section-2 section-3";
 }
 
 @media screen and (min-width: 300px ) {
@@ -33,7 +32,7 @@
 @media screen and (min-width: 1200px ) {
   .main-grid {
     grid-template-areas:
-      'section-1 section-2 section-3'
+      'section-1 section-2 section-3';
   }
 }
 h2 {
