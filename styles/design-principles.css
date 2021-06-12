@@ -43,7 +43,8 @@ h2 {
 h3 {
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 25px;
-p {
+}
+.paragraph {
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 15px;
 }
