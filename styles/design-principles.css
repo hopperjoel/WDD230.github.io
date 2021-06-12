@@ -36,6 +36,9 @@
       "section-1 section-2 section-3";
   }
 }
+.page-title {
+  text-align: center;
+}
 h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
