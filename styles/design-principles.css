@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Noto+Sans+JP&family=Roboto&display=swap');
+
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+#s1 {
+  grid-area:section-1;
+}
+#s2 {
+  grid-area:section-2;
+}
+#s3 {
+  grid-area:section-3;
+}
+.rule-title {
+  grid-area:rule-title;
+}
+.rule-example {
+  grid-area:rule-example;
+}
+.rule-paragraph {
+  grid-area:rule-paragraph;
+}
+.main-grid {
+  display: grid;
+  grid-template-areas: "rule-1 rule-2 rule-3";
+}
+.section {
+  display: grid;
+  grid-template-areas: 
+    "rule-title"
+    "rule-example"
+    "rule-paragraph";
+}
+
+@media screen and (min-width: 300px ) {
+  .main-grid {
+    grid-template-areas:
+      'section-1'
+      'section-2'
+      'section-3';
+  }
+}
+@media screen and (min-width: 600px ) {
+  .main-grid {
+    grid-template-areas:
+      'section-1'
+      'section-2'
+      'section-3'
+  }
+  .section {
+    grid-template-areas:
+      'rule-title'
+      'rule-example rule-paragraph'
+  }
+}
+@media screen and (min-width: 900px ) {
+  .main-grid {
+    grid-template-areas:
+      'section-1 section-2 section-3'
+  }
+}
+    
