@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo&family=Noto+Sans+JP&family=Roboto&display=swap');
 
-font-family: 'Noto Sans JP', sans-serif;
-font-family: 'Roboto', sans-serif;
-
 #s1 {
   grid-area:section-1;
 }
@@ -41,7 +38,7 @@ font-family: 'Roboto', sans-serif;
       'section-3';
   }
 }
-@media screen and (min-width: 600px ) {
+@media screen and (min-width: 900px ) {
   .main-grid {
     grid-template-areas:
       'section-1'
@@ -54,10 +51,17 @@ font-family: 'Roboto', sans-serif;
       'rule-example rule-paragraph'
   }
 }
-@media screen and (min-width: 900px ) {
+@media screen and (min-width: 1200px ) {
   .main-grid {
     grid-template-areas:
       'section-1 section-2 section-3'
   }
 }
-    
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+}
+p {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
