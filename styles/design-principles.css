@@ -10,25 +10,9 @@
 #s3 {
   grid-area:section-3;
 }
-#image-link-1 {
-  grid-area:image-link-1;
-}
-#image-link-2 {
-  grid-area:image-link-2;
-}
-#image-link-3 {
-  grid-area:image-link-3;
-}
 .main-grid {
   display: grid;
-  grid-template-areas: "rule-1 rule-2 rule-3";
-}
-.section {
-  display: grid;
-  grid-template-areas: 
-    'image-link-1'
-    'image-link-2'
-    'image-link-3';
+  grid-template-areas: "section-1 section-2 section-3";
 }
 
 @media screen and (min-width: 300px ) {
@@ -42,14 +26,8 @@
 @media screen and (min-width: 900px ) {
   .main-grid {
     grid-template-areas:
-      'section-1'
-      'section-2'
-      'section-3'
-  }
-  .section {
-    grid-template-areas:
-      'rule-title'
-      'rule-example rule-paragraph'
+      'section-1 section-2'
+      'section-3';
   }
 }
 @media screen and (min-width: 1200px ) {
@@ -61,10 +39,12 @@
 h2 {
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
+  text-align: center;
 }
 h3 {
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: 20px;
+  font-size: 25px;
+  text-align: center;
 p {
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 15px;
