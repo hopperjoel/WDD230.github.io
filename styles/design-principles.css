@@ -47,3 +47,11 @@ p {
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 15px;
 }
+.section {
+  border-style: groove;
+  border-width: 5px;
+  border-color: gray;
+  border-radius: 5px;
+}
+
+  
