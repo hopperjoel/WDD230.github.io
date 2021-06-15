@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+#s1 {
+  grid-area: section-1;
+}
+#s2 {
+  grid-area: section-2;
+}
+#s3 {
+  grid-area: section-3;
+}
+.main-grid {
+  display: grid;
+  grid-gap: 10px;
+}
+
+@media screen and (min-width: 500px) {
+  .main-grid {
+    grid-template-areas:
+      "section-1"
+      "section-2"
+      "section-3";
+    
+}
+@media screen and (min-width: 1000px) {
+  .main-grid {
+    grid-template-areas:
+      "section-1 section-2"
+      "section-3 section-3";
+  }
+}
+@media screen and (min-width: 1300px) {
+  .main-grid {
+    grid-template-areas:
+      "section-1 section-2 section-3";
+  }
+}
+.page-title {
+  text-align: center;
+}
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+}
+h3 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 25px;
+}
+.paragraph {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 15px;
+}
+.section {
+  border-style: groove;
+  border-width: 5px;
+  border-color: gray;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+  
