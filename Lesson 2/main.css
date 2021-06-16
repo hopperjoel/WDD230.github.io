@@ -6,6 +6,9 @@ h2, h3{
 ul, p {
     font-family: 'Arimo', sans-serif;
 }
+body {
+    max-width: 1000px;
+}
 
 .main-header {
     display: grid;
@@ -14,7 +17,7 @@ ul, p {
     background-color: #2ebfa5;
     border-style:groove;
     border-radius: .2em;
-    font-size: 2em;
+    
 }
 a.main-header {
     grid-column: 1;
