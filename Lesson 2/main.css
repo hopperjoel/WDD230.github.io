@@ -10,10 +10,9 @@ body {
     max-width: 1000px;
 }
 
-.main-header {
+header {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 110px auto;
     background-color: #2ebfa5;
     border-style:groove;
     border-radius: .2em;
@@ -29,14 +28,17 @@ h2.main-header {
     grid-row: 1;
     align-content: center;
 }
-.main-nav{
+header {
     grid-column: 1 / 2;
     grid-row: 2;
 }
-.main-nav {
+nav ul {
     display: grid;
-    grid-template-columns: repeat(4 1fr);
-    grid-template-rows: repeat(3 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
+    font-size: 22px;
+}
+nav a:hover {
+    color: #c16200;
 }
 main {
     display: grid;
@@ -46,16 +48,19 @@ main {
 main.page-title {
     grid-column: 1;
     grid-row: 1;
-    align-self: center;
+    text-align: center;
+    padding: 10px;
 }
 main.purpose-paragraph {
     grid-column: 1;
     grid-row: 2;
+    padding: 10px;
 }
 main.domain-name {
     grid-column: 1;
     grid-row: 3;
-    align-self: center;
+    text-align: center;
+    padding: 10px;
 }
 
 
