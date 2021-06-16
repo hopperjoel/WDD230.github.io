@@ -38,24 +38,3 @@ h2.main-header {
     grid-template-columns: repeat(4 1fr);
     grid-template-rows: repeat(3 1fr);
 }
-main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-}
-main.page-title {
-    grid-column: 1;
-    grid-row: 1;
-    align-self: center;
-}
-main.purpose-paragraph {
-    grid-column: 1;
-    grid-row: 2;
-}
-main.domain-name {
-    grid-column: 1;
-    grid-row: 3;
-    align-self: center;
-}
-
-
