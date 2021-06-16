@@ -26,7 +26,7 @@ h2.main-header {
     grid-row: 1;
     align-content: center;
 }
-ul.main-header {
+.main-nav{
     grid-column: 1 / 2;
     grid-row: 2;
 }
