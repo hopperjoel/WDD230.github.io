@@ -12,11 +12,10 @@ body {
 
 header {
     display: grid;
-    grid-template-columns: 110px auto;
+    grid-template-columns: repeat(5 1fr);
     background-color: #2ebfa5;
     border-style:groove;
-    border-radius: .2em;
-    
+    border-radius: .2em;  
 }
 a.main-header {
     grid-column: 1;
@@ -36,6 +35,7 @@ nav ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(6em, 1fr));
     font-size: 22px;
+    list-style: none;
 }
 nav a:hover {
     color: #c16200;
