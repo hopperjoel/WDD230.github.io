@@ -8,9 +8,20 @@ header, h2, h3 {
     font-family: 'Noto Sans', sans-serif;
   }
   header {
-    background-color: silver;
+    background-color: #2ebfa5;
     padding: 0px;
   }
+  nav {
+    background-color: #fcf5c7;
+    font-family: Verdana, sans-serif;
+  }
+  .forecast-header {
+    background-color: #fcf5c7;
+  }
+  footer {
+    background-color: #2ebfa5;
+  }
+
 /*small screen*/
 @media only screen and (min-width: 576px) {
   h1.headings {
@@ -22,7 +33,7 @@ header, h2, h3 {
     padding: 0px;
   }
   header {
-    background-color: silver;
+    background-color: #2ebfa5;
     padding: 0px;
     display: flex;
     align-content: center;
@@ -33,12 +44,8 @@ header, h2, h3 {
         background-color: transparent;
         border:none;
         font-size: 1.6rem;
-        color: #555;
+        color: #fcf8c7b9;
     }
-  nav {
-      background-color: #ccc;
-      font-family: Verdana, sans-serif;
-  }
   nav ul {
       list-style-type: none;
       padding:0;
@@ -56,7 +63,7 @@ header, h2, h3 {
   }
     nav ul li.active a {
         background-color: rgba(0,0,0,0.2);
-        color: #fff;
+        color: #fcf4c798;
     }
     
     nav ul li a:hover {
@@ -69,16 +76,11 @@ header, h2, h3 {
     .weather-bar {
       display:none;
     }
-    footer {
-      background-color: silver;
-    }
+  
     .forecast-box {
-      background-color: #f8f9fa;
+      background-color: #f5eb60;
       border: solid;
       padding: .2rem;
-    }
-    .forecast-header {
-      background-color: silver;
     }
     footer ul {
       list-style: none;
