@@ -4,7 +4,7 @@
 header, h2, h3 {
     font-family: 'Arvo', serif;
   }
-  p, ul {
+p, ul {
     font-family: 'Noto Sans', sans-serif;
   }
   header {
@@ -20,29 +20,15 @@ header, h2, h3 {
   }
   footer {
     background-color: #2ebfa5;
+    font-family: 'Noto Sans', sans-serif;
   }
   body {
-      margin: 10px;
+      margin: 0px;
       padding: 10px;
-    }
+}
 
 /*small screen*/
 @media only screen and (min-width: 576px) {
-  h1.headings {
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
-  }
-  .subheading {
-    padding: 0px;
-  }
-  header {
-    background-color: #2ebfa5;
-    padding: 0px;
-    display: flex;
-    align-content: center;
-  }
-  
   nav button {
         margin:.2rem 2%;
         background-color: transparent;
@@ -61,10 +47,10 @@ header, h2, h3 {
       text-decoration: none;
       color: #000;
       border-top:1px solid rgba(0, 0, 0, 0.3);
-  }
-  nav ul.hide {
-    display: none;
-  }
+    }
+    nav ul.hide {
+      display: none;
+    }
     nav ul li.active a {
         background-color: rgba(0,0,0,0.2);
         color: #fcf4c798;
@@ -73,10 +59,38 @@ header, h2, h3 {
     nav ul li a:hover {
         background-color: rgba(0,0,0,0.4);
     }
-    
+  
+  h1.headings {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+  .subheading {
+    padding: 0px;
+  }
+  header img {
+    width: 50%;
+    height: 40%;
+  }
+  header {
+    background-color: #2ebfa5;
+    padding: 0px;
+    display: flex;
+    align-content: center;
+  }
     main {
       display:block;
     }
+  .page-title {
+    margin: 4rem 0rem 1rem 0rem;
+    padding: 0rem 0rem 0rem 1rem;
+  }
+  figure.summary-photo {
+    width: 50%;
+  }
+  figure.summary-photo img {
+    width: 100%;
+  }
     .weather-bar {
       display:none;
     }
@@ -86,6 +100,13 @@ header, h2, h3 {
       border: solid;
       padding: .2rem;
     }
+    .bottom-paragraph {
+      margin: 0rem 0rem 3rem 0rem;
+      border-style: solid;
+  }
+  img.bottom-paragraph {
+    width: 100%;
+  }
     footer ul {
       list-style: none;
   }
@@ -97,14 +118,9 @@ header, h2, h3 {
 /*medium screen*/
 @media only screen and (min-width: 768px) {
   header img {
-    width: 100%;
+    width: 150%;
+    height: 100%;
   }
- 
-  header img {
-    width: 80px;
-    height: auto;
-  }
- 
   nav button {
     display:none;
   }
@@ -120,49 +136,91 @@ header, h2, h3 {
   }
   nav ul li a {
     border: none;
-    border-right: 1px solid rgba(0,0,0,0.3);
+    border-right: 1px solid                   rgba(0,0,0,0.3);
     padding: .8rem 1rem;
   }
   .weather-summary {
     display: grid;
     grid-auto-flow: column;
+    margin: 30px 0px 40px 0px;
+  }
+  .forecast-box {
+    margin:10px 0px 40px 0px;
+  }
+  .weather-bar {
+    margin:0px 20px 0px 20px;
   }
   footer a {
     display: contents;
   }
+   
 }
+ 
 /*large screen*/
 @media only screen and (min-width: 1000px) {
-
-  nav ul li a {padding: .6rem 1rem;}
   
-  .hero-image {
-    width: 1000px;
-    height: 300px;
+  header img {
+    width: 200px;
+    height: 100px;
+    }
+    nav ul li a {padding: .6rem 1rem;}
+  
+  .page-title {
+    margin: 4rem 0rem 1rem 0rem;
+    padding: 0rem 0rem 0rem 1rem;
   }
-  .summary-content {
+  body {
+    max-width: 1200px;
+    align-content: center;
+  }
+  p.weather-summary {
     position: absolute;
     z-index: 1;
     width: 200px;
     padding: 0rem .4rem;
   }
-  .hero-image {
-    position: relative;
-  }
   .weather-bar {
     display: contents;
     align-content: center;
+    margin: auto;
+  }
+  .weather-bar img {
+    height: 100px;
+    margin:0px 40px 0px 40px;
+    padding-left: 3rem;
+  }
+  .forecast-box {
+    margin:10px 0px 40px 0px;
   }
   .location-map {
     width: 600px;
     height: 300px;
   }
   footer {
-    display:grid;
-    gap: .1rem;
+    display: grid;
     grid-auto-flow: column;
+    padding: 1rem 4rem 1rem 6rem;
+ 
   }
-  
+  .contact-info {
+    display: block;
+    padding: 1rem 0rem 0rem 3rem;
+  }
+  .contact-info button {
+    padding: .3rem 0rem 0rem 0rem;
+    margin-left: -40px;
+    border:none;
+    background-color:transparent;
+  }
+  .contact-info img {
+    width: 2rem;
+    padding: .5rem;    
+  }
+  .footer-bar {
+    background-color: black;
+    height:40px;
+    margin:0px;
+  }
 }
   
 .clearfix:after {
