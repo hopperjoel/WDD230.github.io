@@ -12,16 +12,16 @@
 <body>
   <header>
     <!--add the weather logo from lesson two on here-->
-    <img src="https://github.com/hopperjoel/WDD230.github.io/blob/master/noun_weather_edited.png?raw=true" alt="logo">
+    <figure class = "header-logo">
+      <img src="https://github.com/hopperjoel/WDD230.github.io/blob/master/noun_weather_edited.png?raw=true" alt="logo">
+    </figure>
     <div class = "headings">
-     <h1>Perfect Preston Weather</h1>
-      <div class = "subheading">
-        <h3>So you can press on</h3>
-      </div>
+      <h1>Perfect Preston Weather</h1>
+      <h3>So you can press on</h3>
     </div>
   </header>
   <nav>
-    <button onclick="toggleMenu()">&#9776;</button>
+    <button onclick="toggleMenu()"> &#9776;</button>
       <ul id="primaryNav" class="hide">
         <li> <a href="">Home</a></li>
         <li class="active"> <a href="">Preston</a></li>
@@ -35,62 +35,95 @@
     <h2 class="page-title">
         Preston Idaho
     </h2>
+    <picture class="hero-image">
+        <source media="(min-width: 1025px)" srcset="images\wdd230_image_franklin 1400w.jpeg">
+        <source media="(min-width: 750px)" srcset="images\wdd230_image_franklin_medium.jpeg">
+        <img src="images\wdd230_image_franklin_small.jpeg" alt = "hero-image" class = "hero-image">
+    </picture>
     <div class="weather-summary"> 
-        <h3 class = "summary-header">
-          Weather Summary
-        </h3>
-        <p class = "summary-paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <figure class = "summary-photo">
-          <img src="https://via.placeholder.com/300" alt = "hero-image" class = "hero-image">
-        </figure>
-    </div>
-    <div class = "forecast-box">
-      <h3 class = "forecast-header">
-      Five Day Forecast
-      </h3>
-      <div class="weather-bar">
-        <img src="https://via.placeholder.com/50" alt="first day forecast">
-        <img src="https://via.placeholder.com/50" alt="second day forecast">
-        <img src="https://via.placeholder.com/50" alt="third day forecast">
-        <img src="https://via.placeholder.com/50" alt="fourth day forecast">
-        <img src="https://via.placeholder.com/50" alt="fifth day forecast">
-      </div>
-    </div>
-    <div class = "bottom-paragraph"
-      <h3 class = "article-title">
-        Article Title
+      <h3>
+        Weather Summary
       </h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Weather this week brings promise. Temperatures will begin to drop
+        a little on Monday followed by overcast days predicted for Tuesday and Wednesday.
+        A 70% chance of precipitation is expected for Thursday followed by an 80% chance
+        on Friday. Stay cool.
       </p>
-      <img src="https://via.placeholder.com/200" alt="article-picture">
-      <img class = "five-day-large-pic" src=#" alt="">
+    </div>
+    <div class="five-day-forecast">
+      <h3>
+      Five Day Forecast
+      </h3>
+        <div class = "forecast-bar">
+          <div class="flex-col">
+            <span class="col-head">Day One</span>
+            <img src="images\forecast-sunny.jpg" alt="first day forecast">
+            <span class="data">Sunny</span>
+          </div>
+          <div class="flex-col">
+            <span class="col-head">Day Two</span>
+            <img src="images\forecast-overcast.jpg" alt="second day forecast">
+            <span class="data">Overcast</span>
+          </div>
+          <div class="flex-col">
+            <span class="col-head">Day Three</span>
+            <img src="images\forecast-overcast.jpg" alt="third day forecast">
+            <span class="data">Overcast</span>
+          </div>
+          <div class="flex-col">
+            <span class="col-head">Day Four</span>
+            <img src="images\forecast-rainy.jpg" alt="fourth day forecast">
+            <span class="data">Rainy</span>
+          </div>
+          <div class="flex-col">
+            <span class="col-head">Day Five</span>
+            <img src="images\forecast-rainy.jpg" alt="fifth day forcecast">
+            <span class="data">Rainy</span>
+          </div>
+      </div>
+    </div>
+    <div class = "bottom-article">
+      <figure class = "article-image">
+        <img src="images\independence_day_parade 1200w.jpg" alt="article-picture of parade">
+      </figure>
+      <h3>
+        Preparation for Independence Day Celebration
+      </h3>
+      <p>
+        People are getting ready for the annual 4th of July Parade and Celebration. The daily events
+        will start off with the parade at 10:00 AM on July 3rd (observed) followed by the 23rd annual 
+        BBQ Cookoff at noon. Events for the day will wrap up with the 3 on 3 basketball tournament finals
+        at 7:00 PM and Fireworks at 10:00. All events will be held in the town square park with the 
+        parade running from 600 N to 400 S Main Street.
+      </p>
     </div>
   </main>
     <footer>
-      <div class ="location-map">
-        <img class="location-map" src="https://via.placeholder.com/300" alt="location map">
+      <figure class = "map-picture">
+        <img src="images\map1200w.jpg" alt="location map">
+      </figure>
+      <div class = "footer-info">
+        <div class="contact-info">
+          <h2>
+            Contact Information
+          </h2>
+          <ul>
+            <li class="optional"><button id="phone">&#9991</button> 90099090</li>
+            <li><button id="email">&#9993;</button> email@perfectpreston.com</li>
+            <li><button id="phone">&#9742;</button> (111) 111-1111</li>
+          </ul>
+        </div>
+          <div class = "social-media">
+            <a href="#"><img src="https://via.placeholder.com/25" alt="facebook-icon"></a>
+            <a href="#"><img src="https://via.placeholder.com/25" alt="instagram-icon"></a>
+            <a href="#"><img src="https://via.placeholder.com/25" alt="twitter-icon"></a>
+        </div>
+        <p>Date/Time: <span id="datetime"></span></p>
+        <!--footer bar?-->
       </div>
-      <div class="contact-info"
-        <h2>
-          Contact Information
-        </h2>
-        <ul>
-          <li class="optional"><button id="phone">&#9991</button> 90099090</li>
-          <li><button id="email">&#9993;</button> email@perfectpreston.com</li>
-          <li><button id="phone">&#9742;</button> (111) 111-1111</li>
-        </ul>
-        <a href="#"><img src="https://via.placeholder.com/25" alt="facebook-icon"></a>
-        <a href="#"><img src="https://via.placeholder.com/25" alt="instagram-icon"></a>
-        <a href="#"><img src="https://via.placeholder.com/25" alt="twitter-icon"></a>
-      <p>Date/Time: <span id="datetime"></span></p>
-    </div>
-      
     </footer>
-    <p class = "footer-bar">
-    </p>
-  <script src="https://hopperjoel.github.io/WDD230.github.io/weather/js/preston.js"></script>
+  <!--<script src="https://hopperjoel.github.io/WDD230.github.io/weather/js/preston.js"></script>-->
+  <script src="C:\Users\hoppe\OneDrive\Documents\BYU\WDD230\WDD230.github.io\weather\js\preston.js"></script>
  </body>
 </html>
