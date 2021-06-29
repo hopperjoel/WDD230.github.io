@@ -12,9 +12,11 @@ picture img {
     transition: filter 0.5s;
   }
 
-  body {
-      justify-content: center;
-  }
+body {
+    align-content: center;
+    display: block;
+    width: 600px;
+}
   h1 {
       font-weight: 600;
   }
