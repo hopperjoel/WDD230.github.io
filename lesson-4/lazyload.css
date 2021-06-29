@@ -1,0 +1,20 @@
+
+
+picture img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+picture img {
+    border: 2px solid black;
+    padding: 2px;
+    box-shadow: 2px 2px silver;
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
+
+  body {
+      justify-content: center;
+  }
+  h1 {
+      font-weight: 600;
+  }
