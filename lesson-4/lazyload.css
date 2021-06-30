@@ -12,10 +12,11 @@ picture img {
     transition: filter 0.5s;
   }
 
-body {
-    align-content: center;
-    display: block;
-    width: 600px;
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
   h1 {
       font-weight: 600;
