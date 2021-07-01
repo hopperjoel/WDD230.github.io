@@ -88,7 +88,7 @@ body {
     .header-logo {
       width: 15%;
       height: auto;
-      margin: 0px;
+      margin: 0rem 1rem 0rem 0rem;
     }
 
     header img {width: 100%;}
@@ -124,6 +124,10 @@ body {
     .header-logo {
         width: 50%;
         max-width: 120px;
+        margin: .5rem 5rem 0rem 1rem;
+    }
+    header {
+        width: 100%;
     }
     /*nav change*/
     nav button {
@@ -148,9 +152,8 @@ body {
         margin:0rem 0rem 0rem 0rem;      
     }
     /*main content*/
-    main {
-        clear: both;
-    }
+    main {clear: both;}
+
     .page-title {
         text-align: center;
         padding: 1rem 0rem 0rem 0rem;
@@ -225,6 +228,9 @@ body {
 /*large screen*/
 @media only screen and (min-width: 1025px) {
 
+    body {
+        max-width: 1200px;
+    }
     .gallery-images figure:hover {
         box-shadow: 0 0 30px rgb(77, 76, 76);
     }
