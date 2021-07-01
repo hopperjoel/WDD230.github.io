@@ -230,6 +230,7 @@ body {
 
     body {
         max-width: 1200px;
+        justify-content: center;
     }
     .gallery-images figure:hover {
         box-shadow: 0 0 30px rgb(77, 76, 76);
