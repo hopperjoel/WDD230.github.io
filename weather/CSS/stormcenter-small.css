@@ -1,0 +1,90 @@
+/*-------IMPORT----*/
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Noto+Sans&display=swap');
+
+/*font-family: 'Noto Sans', sans-serif;*/
+
+/*-----GLOBAL----*/
+header, h2, h3, figcaption {
+    font-family: 'Arvo', serif;
+  }
+p, ul, li, a{
+    font-family: 'Noto Sans', sans-serif;
+}
+header {
+  background-color: #2ebfa5;
+  padding: 0px;
+}
+nav {
+  background-color: #fcf5c7;
+  font-family: Verdana, sans-serif;
+}
+footer {
+  background-color: #2ebfa5;
+  font-family: 'Noto Sans', sans-serif;
+}
+body {
+  margin: 0px;
+  padding: 10px;
+  max-width: 1200px;
+}
+
+/*-----NAVIGATION---*/
+
+nav button {
+    margin:.2rem 2%;
+    background-color: transparent;
+    border:none;
+    font-size: 1.6rem;
+}
+nav button:hover {
+  color:#3f3d3298;
+}
+nav ul {
+  list-style-type: none;
+  padding:0;
+  margin:0;
+}
+nav ul li a {
+  display: block;
+  padding: .8rem 2%;
+  text-decoration: none;
+  color: #000;
+  border-top:1px solid rgba(0, 0, 0, 0.3);
+}
+nav ul.hide {display: none;}
+nav ul li.active a {
+  background-color: rgba(0,0,0,0.2);
+  color: #fcf4c798;
+}
+nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+
+/*------MAIN-----*/
+
+h1.headings {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+.subheading {padding: 0px;}
+
+.header-logo {
+    width: 15%;
+    height: auto;
+    margin: 0rem 1rem 0rem 0rem;
+}
+
+header img {width: 100%;}
+
+header {
+    padding: 0px;
+    display: flex;
+    align-content: center;
+}
+.page-title {
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 0rem 0rem 0rem .5rem;
+}
+
+/*------FORM------*/
+
+/*-------FOOTER----*/
