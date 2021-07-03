@@ -17,7 +17,7 @@
     <figure class = "header-logo">
       <img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/noun-weather-edited.png" alt="logo">
     </figure>
-    <div class = "headings">
+    <div class="headings">
       <h1>Perfect Preston Weather</h1>
       <h3>So you can press on</h3>
     </div>
@@ -26,27 +26,28 @@
     <button onclick="toggleMenu()"> &#9776;</button>
       <ul id="primaryNav" class="hide">
         <li><a href="">Home</a></li>
-        <li><a href="">Preston</a></li>
+        <li><a href="preston.html">Preston</a></li>
         <li><a href="">Soda Springs</a></li>
         <li><a href="">Fish Haven</a></li>
-        <li class="active"> <a href="">Storm Center</a></li>
-        <li><a href="">Gallery</a></li>
+        <li class="active"> <a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery-7.html">Gallery</a></li>
       </ul>
     </nav>
   <main>
     <h1 class="page-title">Stormcenter</h1>
+    <p class="page-syn">Report dangerous weather conditions or phenomenon</p>
     <form>
         <fieldset>
             <legend>Personal Info</legend>
-            <label class="per"><input type="text" name="name" required pattern="regexp for 5 letters instead of minlength?">Full Name</label>
-            <label class="per"><input type="email" name="email" placeholder="someone@gmail.com">Email</label>
-            <label class="per"><input type="tel" name="phone" required>Phone Number</label>
-            <label class="per"><input type="number" name="zip-code" required pattern="some regular expression">Zip Code</label>
+            <label class="top">Full Name<input type="text" name="name" required pattern="[^0-9]{5,}"></label>
+            <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+            <label class="top">Phone Number<input type="tel" name="phone" required></label>
+            <label class="top">Zip Code<input type="number" name="zip-code" required pattern="{5}"></label>
         </fieldset>
         <fieldset>
             <legend>Storm Information</legend>
-            <label><input type="date" name="date">Storm Date</label>
-            <label>
+            <label class="top">Storm Date<input type="date" name="date"></label>
+            <label class="top">Storm Type
                 <input list="storm-type">
                 <datalist id="storm-type">
                     <option value="Blizzard">
@@ -57,10 +58,9 @@
                     <option value="Thunderstorm">
                     <option value="Tornado">
                 </datalist>
-                Storm Type
             </label>
-            <label><input type="range" name="severity" min="1" max="10" >Storm Severity (from 1 to 10)</label>
-            <label>Storm Region
+            <label class="top">Storm Severity (from 1 to 10)<input type="range" name="severity" min="0" max="10"></label>
+            <label class="top">Storm Region
                 <select name="region">
                     <option value="">Please Select</option>
                 <option value="preston">Preston</option>
@@ -69,13 +69,12 @@
                 </select>
             </label>
             <div>In-Danger Level</div>
-            <input type="radio" name="in-danger" value="yes">Yes</label>
-            <label><input type="radio" name="in-danger" value="no">No</label>
-            <label><input type="radio" name="in-danger" value="maybe">Maybe</label>
-            <label><input type="textarea" name="comments">Additional Information or Comments</label>
+            <label class="sbs"><input type="radio" name="in-danger" value="yes">Yes</label>
+            <label class="sbs"><input type="radio" name="in-danger" value="no">No</label>
+            <label class="sbs"><input type="radio" name="in-danger" value="maybe">Maybe</label>
+            <label class="top" id="optional">Additional Information or Comments<input type="textarea" name="comments"></label>
         </fieldset>
-        <input type="submit" value="Report This Storm">
-
+        <input type="submit" value="Report This Storm" class="submit-button">
     </form>
 
   </main>
@@ -96,7 +95,6 @@
             <a href="#"><img src="https://via.placeholder.com/25" alt="instagram-icon"></a>
             <a href="#"><img src="https://via.placeholder.com/25" alt="twitter-icon"></a>
         </div>
-        <p>Date/Time: <span id="datetime"></span></p>
       </div>
     </footer>
   <script src="js/stormcenter.js" defer></script>

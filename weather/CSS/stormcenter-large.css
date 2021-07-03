@@ -4,6 +4,32 @@
 
 /*-----NAVIGATION---*/
 
+nav button {
+    display:none;
+}
+nav ul.hide {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0rem 0rem 0rem 0rem;
+    margin: 0rem 0rem 0rem 0rem;
+    justify-content: space-evenly;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    width: 100%;
+}
+nav ul li {
+    background-color: #fcf5c7;
+}
+nav ul li a {
+    border: none;
+    border-right: 1px solid   rgba(0,0,0,0.3);
+    padding: 1rem 2rem 1rem 2rem;
+    margin:0rem 0rem 0rem 0rem;   
+    text-align: center;
+    text-justify: center;   
+}
 /*------MAIN-----*/
 
 /*------FORM------*/

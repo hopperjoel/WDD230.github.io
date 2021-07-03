@@ -1,11 +1,52 @@
-/*-------IMPORT----*/
-
-/*-----GLOBAL----*/
 
 /*-----NAVIGATION---*/
 
-/*------MAIN-----*/
+
+
+/*------MAIN------*/
+
+main {
+    clear: both;
+    margin:auto;
+}
 
 /*------FORM------*/
 
-/*-------FOOTER----*/
+form label.sbs {
+    padding: .4rem 0;
+}
+form input.submit-button {
+    width: 100%;
+    max-width: 25rem;
+}
+
+/*------FOOTER-----*/
+
+footer p {display: none;}
+
+footer button {
+  border: none;
+  background-color: transparent;
+}
+footer a {display: contents;}
+footer {
+    display: flex;
+    flex-direction: row;
+}
+.footer-info {display: block;}
+
+.contact-info {
+    padding-left:0rem;
+    margin-left:20px;
+}
+.contact-info li {
+    margin-left: -25px;
+    list-style: none;
+}
+.social-media {
+    padding-left: 1rem;
+}
+
+
+
+

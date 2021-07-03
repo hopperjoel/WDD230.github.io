@@ -24,8 +24,9 @@ footer {
   font-family: 'Noto Sans', sans-serif;
 }
 body {
-  margin: 0px;
+  margin: auto;
   padding: 10px;
+  max-width: 1400px;
 }
 .gallery-images figure img[data-src] {
     filter: blur(0.2em);
