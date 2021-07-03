@@ -65,27 +65,35 @@ footer {
         padding: 10px;
         max-width: 1200px;
     }
-
     h1.headings {
         display: flex;
         flex-direction: column;
         padding: 0px;
     }
-    .subheading {padding: 0px;}
-
+    .subheading {padding: 0rem;}
+    
     .header-logo {
         width: 15%;
         height: auto;
         margin: 0rem 1rem 0rem 0rem;
     }
-
+    
     header img {width: 100%;}
-
+    
     header {
         padding: 0px;
         display: flex;
         align-content: center;
     }
+    .page-title {
+        margin: 1rem 0rem 1rem 1rem;
+        padding: 1rem 0rem 0rem 1rem;
+    }
+    .page-syn {
+        margin: 1rem 1rem 0rem 1rem;
+        padding: 0rem 1rem 0rem 1rem;
+    }
+    
 
     /*-------FOOTER----*/
     footer {
@@ -133,6 +141,16 @@ footer {
         padding: 1rem 1rem 2rem 1rem;
         margin:0rem 0rem 0rem 0rem;      
     }
+
+    /*---------MAIN------*/
+
+    main {
+        clear: both;
+        margin:auto;
+        max-width: 60rem;
+    }
+
+
 
     /*------FOOTER-----*/
 
