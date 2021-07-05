@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+
+/*----------SMALL SCREEN------------*/
+
+@media only screen and (min-width: 320px) {
+    body {
+        font-family: 'Uchen', serif;
+        max-width: 70rem;
+        margin: auto;
+        padding: 2rem;
+    }
+    header {
+        text-align: center;
+        color: rgb(6, 96, 240);
+    }
+    .cards {
+        display: flex;
+        flex-flow: column;
+    }
+    .cards section {
+        background-color: rgb(153, 181, 226);
+        border: 2px solid silver;
+        margin: .2rem;
+        padding: .5rem;
+        width: 90%
+    }
+    .cards section h2 {
+        color: rgb(6, 96, 240);
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .cards section h2 p {
+        font-size: 1rem;
+    }
+    .cards section img {
+        width: 70%;
+        max-width: 15rem;
+        box-shadow: 2px 2px 4px 2px rgba(136, 136, 136, 0.561);
+    }
+    footer {
+        text-align: center;
+        background-color: rgb(226, 226, 226);
+        border: 2px solid black;
+        padding: 2rem;
+    }
+}
+
+/*---------MEDIUM SCREEN----------*/
+
+@media only screen and (min-width: 481px) {
+
+    .cards {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 1rem;
+    }
+    .cards section {
+        width: 45%;
+    }
+}
+
+/*---------LARGE SCREEN-----------*/
+
+@media only screen and (min-width: 1025px) {
+
+    .cards section {
+        width: 22%;
+        
+    }
+}
