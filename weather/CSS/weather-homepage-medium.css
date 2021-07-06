@@ -1,0 +1,56 @@
+/*------MAIN------*/
+
+main {
+    clear: both;
+    margin:auto;
+}
+.page-desc {
+    width: 50%;
+    top: 4rem;
+    font-size: 120%;
+}
+.town {
+    display: flex;
+    flex-direction: row;
+}
+.town:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+.name-motto {
+    text-align: center;
+    margin:auto;
+}
+.town h2 {
+    font-size: 200%;
+}
+.town-image {
+    width: 20rem;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+/*------FOOTER-----*/
+
+footer p {display: none;}
+
+footer button {
+  border: none;
+  background-color: transparent;
+}
+footer a {display: contents;}
+footer {
+    display: flex;
+    flex-direction: row;
+}
+.footer-info {display: block;}
+
+.contact-info {
+    padding-left:0rem;
+    margin-left:20px;
+}
+.contact-info li {
+    margin-left: -25px;
+    list-style: none;
+}
+.social-media {
+    padding-left: 1rem;
+}

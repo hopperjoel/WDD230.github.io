@@ -1,0 +1,153 @@
+/*-------IMPORT----*/
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Noto+Sans&display=swap');
+
+/*font-family: 'Noto Sans', sans-serif;*/
+
+/*-----GLOBAL----*/
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+header, h1, h2, h3 {
+    font-family: 'Arvo', serif;
+  }
+header {
+  background-color: #2ebfa5;
+  padding: 0px;
+}
+nav {
+  background-color: #fcf5c7;
+  font-family: Verdana, sans-serif;
+}
+footer {
+  background-color: #2ebfa5;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
+/*-----NAVIGATION---*/
+
+nav button {
+    margin:.2rem 2%;
+    background-color: transparent;
+    border:none;
+    font-size: 1.6rem;
+}
+nav button:hover {
+  color:#3f3d3298;
+}
+nav ul {
+  list-style-type: none;
+  padding:0;
+  margin:0;
+}
+nav ul li a {
+  display: block;
+  padding: .8rem 2%;
+  text-decoration: none;
+  color: #000;
+  border-top:2px solid rgba(0, 0, 0, 0.3);
+}
+nav ul.hide {display: none;}
+nav ul li.active a {
+  background-color: rgba(0,0,0,0.2);
+  color: #fcf4c798;
+}
+nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+
+/*------MAIN-----*/
+
+body {
+    margin: auto;
+    padding: 1rem;
+    max-width: 80rem;
+  }
+
+h1.headings {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+.subheading {padding: 0px;}
+
+.header-logo {
+    width: 15%;
+    height: auto;
+    margin: 0rem 1rem 0rem 0rem;
+}
+
+header img {width: 100%;}
+
+header {
+    padding: 0px;
+    display: flex;
+    align-content: center;
+    border-radius: 5px 5px 0 0;
+}
+.banner{position: relative;}
+
+.hero-image {
+    width: 99%;
+    margin: auto;
+    position: relative;
+    border-radius: 5px;
+}
+.hero-image img {
+    width: 100%;
+}
+.page-desc {
+    border: 2px solid black;
+    border-radius: 5px;
+    position: absolute;
+    top: 0rem;
+    left: 2rem;
+    width: 50%;
+    padding: .3rem;
+    background: rgba(200, 228, 200, 0.3);
+    color: rgb(255, 255, 255);
+    font-size: 90%;
+}
+.cards {margin: auto;}
+.town {
+    margin: 2rem 0rem 2rem 0rem;
+    padding: .3rem;
+    text-align: center;
+    background: rgba(207, 243, 207, 0.3);
+    border: 3px solid black;
+    border-radius: 5px;
+}
+.town-image {
+    width: 90%;
+    margin: auto;
+}
+.town-image img {
+    width: 100%;
+    box-shadow: 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+}
+
+/*-------FOOTER----*/
+footer {
+    padding: 1rem .5rem 1rem .5rem;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    margin: auto;
+}
+.contact-info {
+    padding-left:0rem;
+    margin-left:20px;
+}
+.contact-info li {
+    margin-left: -25px;
+    list-style: none;
+}
+.contact-info button {
+    background-color: transparent;
+    border: none;
+}
+.social-media {
+    padding-left: 1.5rem;
+}
+.wireframes a {
+    padding: .5rem;
+}
