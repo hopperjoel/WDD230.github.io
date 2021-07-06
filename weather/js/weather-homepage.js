@@ -31,7 +31,7 @@ fetch(requestURL)
             card.setAttribute("class", "town");
             div1.setAttribute("class", "name-motto")
             figure.setAttribute("class", "town-image");
-            img.setAttribute("src", `${town.photo}`);
+            img.setAttribute("src", `images/${town.photo}`);
             img.setAttribute("alt", `Town of ${town.name}`);
             p.setAttribute("class", "town-info");
 
