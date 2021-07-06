@@ -16,6 +16,7 @@ fetch(requestURL)
 
         townpages.forEach((town) => {
             let card = document.createElement('section');
+            let div1 = document.createElement('div');
             let h2 = document.createElement('h2');
             let h3 = document.createElement('h3');
             let figure = document.createElement('figure');
@@ -27,16 +28,20 @@ fetch(requestURL)
             p.innerHTML = `Year Founded: ${town.yearFounded}<br> Population: ${town.currentPopulation}<br>
             Annual Rainfall: ${town.averageRainfall}`;
 
-            card.setAttribute("class", "town-info");
+            card.setAttribute("class", "town");
+            div1.setAttribute("class", "name-motto")
             figure.setAttribute("class", "town-image");
             img.setAttribute("src", `${town.photo}`);
             img.setAttribute("alt", `Town of ${town.name}`);
+            p.setAttribute("class", "town-info");
 
-            card.appendChild(h2);
-            card.appendChild(h3);
+            card.appendChild(div1);
+            div1.appendChild(h2);
+            div1.appendChild(h3);
+            div1.appendChild(p);
             card.appendChild(figure);
             figure.appendChild(img);
-            card.appendChild(p);
+            
             
             document.querySelector('div.cards').appendChild(card);
         });
