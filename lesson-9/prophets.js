@@ -24,3 +24,13 @@ fetch(requestURL)
         }
     });
 
+const requestURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid={dd504892e20d342c74bd24c89e54dc9a}"
+
+fetch(requestURL)
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(jsonObject) {
+        console.table(jsonObject)
+        const forecast = jsonObject['']
+    })
