@@ -5,6 +5,10 @@ fetch(apiURL)
     .then((jsObject) => {
         console.log(jsObject);
         document.getElementById('current-temp').textContent = jsObject.list[0].main.temp;
+        document.getElementById('current-temp').textContent = jsObject.list[0].main.temp;
+        document.getElementById('current-temp').textContent = jsObject.list[0].main.temp;
+        document.getElementById('current-temp').textContent = jsObject.list[0].main.temp;
+        document.getElementById('current-temp').textContent = jsObject.list[0].main.temp;
         const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.list[0].weather[0].icon + '.png';
         const desc = jsObject.list[0].weather[0].description;
         document.getElementById('imagesrc').textContent = imagesrc;
