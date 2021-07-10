@@ -7,7 +7,9 @@
   <meta name="description" content="Preston, Idaho subpage for Perfect Preston Weather - Assignment for WDD230
   at Brigham Young University - Idaho">
   <link rel="stylesheet" href="https://hopperjoel.github.io/WDD230.github.io/styles/normalize.css">
-  <link rel="stylesheet" href="https://hopperjoel.github.io/WDD230.github.io/weather/CSS/preston-main.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 320px)" href="css/preston-small.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 481px)" href="css/preston-medium.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 1025px)" href="css/preston-large.css">
 </head>
 <body>
   <header>
@@ -32,24 +34,26 @@
       </ul>
     </nav>
   <main>
-    <h2 class="page-title">
-        Preston Idaho
-    </h2>
-    <picture class="hero-image">
-        <source media="(min-width: 1025px)" srcset="/weather/images/wdd230_image_franklin 1400w.jpeg">
-        <source media="(min-width: 750px)" srcset="/weather/images/wdd230_image_franklin_medium.jpeg">
-        <img src="/weather/images/wdd230_image_franklin_small.jpeg" alt = "hero-image" class = "hero-image">
-    </picture>
-    <div class="weather-summary"> 
-      <h3>
-        Weather Summary
-      </h3>
-        <p>Currently: <span id="current-condition"></span></p>
-        <p>Temperature: <span id="current-temp"></span> &deg;F</p>
-        <p>High: <span id="temp-high"></span> &deg;F</p>
-        <p>Wind Chill: <span id="wind-chill"></span> &deg;F</p>
-        <p>Humidity: <span id="humidity"></span>&#37;</p>
-        <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+    <div class="hero-weather">
+      <h2 class="page-title">
+          Preston Idaho
+      </h2>
+      <picture class="hero-image">
+          <source media="(min-width: 1025px)" srcset="/weather/images/wdd230_image_franklin 1400w.jpeg">
+          <source media="(min-width: 481px)" srcset="/weather/images/wdd230_image_franklin_medium.jpeg">
+          <img src="/weather/images/wdd230_image_franklin_small.jpeg" alt = "hero-image" class = "hero-image">
+      </picture>
+      <div class="weather-summary"> 
+        <h3>
+          Weather Summary
+        </h3>
+          <p>Currently: <span id="current-condition"></span></p>
+          <p>Temperature: <span id="current-temp"></span> &deg;F</p>
+          <p>High: <span id="temp-high"></span> &deg;F</p>
+          <p>Wind Chill: <span id="wind-chill"></span> &deg;F</p>
+          <p>Humidity: <span id="humidity"></span>&#37;</p>
+          <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+      </div>
     </div>
     <div class="five-day-forecast">
       <h3>
@@ -57,35 +61,35 @@
       </h3>
         <div class = "forecast-bar">
           <div class="flex-col">
-            <span class="col-head">Day One</span>
-            <img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/forecast-sunny.jpg" alt="first day forecast">
-            <span class="data">Sunny</span>
+            <p><span class="col-head" id="day-1"></span></p>
+            <span id="imagesrc-1"></span>&nbsp; <img src="" alt="" id="icon-1">
+            <p><span class="data" id="temp-1"></span> &deg;F</p>
           </div>
           <div class="flex-col">
-            <span class="col-head">Day Two</span>
-            <img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/forecast-overcast.jpg" alt="second day forecast">
-            <span class="data">Overcast</span>
+            <p><span class="col-head" id="day-2"></span></p>
+            <span id="imagesrc-2"></span>&nbsp; <img src="" alt="" id="icon-2">
+            <p><span class="data" id="temp-2"></span> &deg;F</p>
           </div>
           <div class="flex-col">
-            <span class="col-head">Day Three</span>
-            <img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/forecast-overcast.jpg" alt="third day forecast">
-            <span class="data">Overcast</span>
+            <p><span class="col-head" id="day-3"></span></p>
+            <span id="imagesrc-3"></span>&nbsp; <img src="" alt="" id="icon-3">
+            <p><span class="data" id="temp-3"></span> &deg;F</p>
           </div>
           <div class="flex-col">
-            <span class="col-head">Day Four</span>
-            <img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/forecast-rainy.jpg" alt="fourth day forecast">
-            <span class="data">Rainy</span>
+            <p><span class="col-head" id="day-4"></span></p>
+            <span id="imagesrc-4"></span>&nbsp; <img src="" alt="" id="icon-4">
+            <p><span class="data" id="temp-4"></span> &deg;F</p>
           </div>
           <div class="flex-col">
-            <span class="col-head">Day Five</span>
-            <img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/forecast-rainy.jpg" alt="fifth day forcecast">
-            <span class="data">Rainy</span>
+            <p><span class="col-head" id="day-5"></span></p>
+            <span id="imagesrc-5"></span>&nbsp; <img src="" alt="" id="icon-5">
+            <p><span class="data" id="temp-5"></span> &deg;F</p>
           </div>
       </div>
     </div>
     <div class = "bottom-article">
       <figure class = "article-image">
-        <img src="/weather/images/independence_day_parade%1200w.jpg" alt="article-picture of parade">
+        <img src="/weather/images/independence-day-parade-1200w.jpg" alt="article-picture of parade">
       </figure>
       <h3>
         Preparation for Independence Day Celebration
@@ -109,21 +113,21 @@
             Contact Information
           </h2>
           <ul>
-            <li class="optional"><button id="phone">&#9991</button> 90099090</li>
+            <li class="optional"><button id="phone">&#9991;</button> 90099090</li>
             <li><button id="email">&#9993;</button> email@perfectpreston.com</li>
             <li><button id="phone">&#9742;</button> (111) 111-1111</li>
           </ul>
         </div>
           <div class = "social-media">
-            <a href="#"><img src="https://via.placeholder.com/25" alt="facebook-icon"></a>
-            <a href="#"><img src="https://via.placeholder.com/25" alt="instagram-icon"></a>
-            <a href="#"><img src="https://via.placeholder.com/25" alt="twitter-icon"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="/weather/images/facebook.png" alt="facebook-icon"></a>
+            <a href="https://www.twitter.com/" target="_blank"><img src="/weather/images/twitter.png" alt="twitter-icon"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="/weather/images/youtube.png" alt="youtube-icon"></a>
         </div>
         <p>Date/Time: <span id="datetime"></span></p>
         <!--footer bar?-->
       </div>
     </footer>
-  <script src="https://hopperjoel.github.io/WDD230.github.io/weather/js/preston.js"></script>
-  <script src="js/weatherapi.js"></script>
+  <script src="/weather/js/preston.js"></script>
+  <script src="js/preston-weatherapi.js"></script>
   </body>
 </html>

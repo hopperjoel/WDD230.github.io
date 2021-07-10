@@ -1,0 +1,128 @@
+/*------NAV-----*/
+
+nav button {display:none;}
+nav ul.hide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+nav ul {
+    margin: auto;
+    list-style: none;
+}
+nav ul li a {
+    border: none;
+    border-right: 1px solid   rgba(0,0,0,0.3);
+} 
+nav ul li {
+    padding:0%;
+    margin: 0%;
+    text-align: center;
+    width: 100%;
+    font-size: 130%;
+}
+
+/*-------HEADER------*/
+
+header {
+    font-size: 120%;
+}
+/*-------MAIN-----*/
+
+main {
+    clear: both;
+    margin: auto;
+} 
+.page-title {
+    margin: 4rem 0rem 2rem 0rem;
+    font-size: 240%;
+}
+
+.weather-summary {
+    top: 10rem;
+    left: 5rem;
+    width: 20rem;
+    padding: 0rem .4rem;
+    font-size: 130%;
+}
+.article-image {
+    max-width: 40%;
+    float: right;
+}
+.article-image img {
+    max-width: 100%;
+}
+.bottom-article {
+    font-size: 130%;
+    margin: 4rem 0rem;
+    padding: 0rem 0rem 4rem 1rem;
+}
+
+/*------FORECAST BAR------*/
+
+.five-day-forecast {
+    display: contents;
+    font-size: 140%;
+}
+.five-day-forecast h3 {margin: 4rem 0rem 1rem 1rem;}
+.forecast-bar {
+    display: flex;
+    flex-flow: row;
+    padding: 0rem;
+    margin: auto;
+}
+
+.flex-col {flex: 1 1 auto;}
+
+.flex-col, .column-col, .grid-col {
+    border: 5px solid silver;
+    text-align: center; 
+}
+
+.col-head {
+    display: block;
+    padding: .8rem;
+    margin: auto;
+    font-weight: 700;
+    border-bottom: 3px solid silver;
+    background-color: #2ebfa5;
+    text-align: center;
+}
+.flex-col {
+    min-width: 5rem;
+    justify-content: space-evenly;
+}
+.data {
+    text-align: center;
+} 
+.flex-col img {
+    width: 8rem;
+    margin: auto;
+}
+
+/*------FOOTER------*/
+
+footer {
+    display: grid;
+    grid-auto-flow: column;
+    padding: 1rem 4rem 1rem 6rem;
+}
+.map-picture {
+    width: 60%;
+}
+
+.contact-info {
+    display: block;
+    padding: 1rem 0rem 0rem 3rem;
+}
+
+.contact-info img {
+    width: 2rem;
+    padding: .5rem;    
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
