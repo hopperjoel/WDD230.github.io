@@ -82,6 +82,7 @@ header {
     padding: 0px;
     margin: auto;
     width: 100%;
+    font-size: 80%;
 }
 
 /*-------MAIN-----*/
@@ -141,7 +142,7 @@ footer ul {list-style: none;}
 footer a {display: none;}
 
 .map-picture {
-    width: 30%;
+    width: 60%;
     max-width: 80rem;
     margin: auto;
     padding: 0rem;
