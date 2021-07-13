@@ -2,36 +2,69 @@
 
 /*-----GLOBAL----*/
 
-/*-----NAVIGATION---*/
+/*------NAV-----*/
 
-nav button {
-    display:none;
-}
+nav button {display:none;}
 nav ul.hide {
     display: flex;
-    flex-flow: row wrap;
-    padding: 0rem 0rem 0rem 0rem;
-    margin: 0rem 0rem 0rem 0rem;
+    flex-direction: row;
     justify-content: space-evenly;
-    text-align: center;
 }
 nav ul {
+    margin: auto;
     list-style: none;
-    width: 100%;
-}
-nav ul li {
-    background-color: #fcf5c7;
 }
 nav ul li a {
     border: none;
     border-right: 1px solid   rgba(0,0,0,0.3);
-    padding: 1rem 2rem 1rem 2rem;
-    margin:0rem 0rem 0rem 0rem;   
+} 
+nav ul li {
+    padding:0%;
+    margin: 0%;
     text-align: center;
-    text-justify: center;   
+    width: 100%;
+    font-size: 130%;
 }
-/*------MAIN-----*/
+/*-------HEADER------*/
 
+header {
+    font-size: 120%;
+}
+/*-------MAIN-----*/
+
+main {
+    clear: both;
+    margin: auto;
+} 
+.page-title {
+    margin: 4rem 0rem 2rem 0rem;
+    font-size: 240%;
+}
 /*------FORM------*/
 
 /*-------FOOTER----*/
+
+footer {
+    display: grid;
+    grid-auto-flow: column;
+    padding: 1rem 4rem 1rem 6rem;
+}
+.map-picture {
+    width: 60%;
+}
+
+.contact-info {
+    display: block;
+    padding: 1rem 0rem 0rem 3rem;
+}
+
+.contact-info img {
+    width: 2rem;
+    padding: .5rem;    
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

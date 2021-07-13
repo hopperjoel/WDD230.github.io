@@ -45,6 +45,12 @@ main {
     padding: 0rem .4rem;
     font-size: 130%;
 }
+.weather-summary h3 {
+    text-align: center;
+}
+.weather-summary p {
+    text-align: left;
+}
 .article-image {
     max-width: 40%;
     float: right;

@@ -25,43 +25,46 @@ footer {
 }
 
 
-/*-----NAVIGATION---*/
+ /*-------NAV----*/
 
+ nav {
+    background-color: #fcf5c7;
+    font-family: Verdana, sans-serif;
+    width: 100%;
+    margin: auto;
+    border-right: 3px solid silver;
+    border-bottom: 3px solid silver;
+    border-left: 3px solid silver;
+    border-radius: 0px 0px 5px 5px;
+}
 nav button {
     margin:.2rem 2%;
     background-color: transparent;
     border:none;
     font-size: 1.6rem;
 }
-nav button:hover {
-  color:#3f3d3298;
-}
 nav ul {
-  list-style-type: none;
-  padding:0;
-  margin:0;
+    list-style-type: none;
+    padding:0;
+    margin:0;
 }
 nav ul li a {
-  display: block;
-  padding: .8rem 2%;
-  text-decoration: none;
-  color: #000;
-  border-top:2px solid rgba(0, 0, 0, 0.3);
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top:1px solid rgba(0, 0, 0, 0.3);
 }
+
 nav ul.hide {display: none;}
 nav ul li.active a {
-  background-color: rgba(0,0,0,0.2);
-  color: #fcf4c798;
+    background-color: rgba(0,0,0,0.2);
+    color: #fcf4c798;
 }
+
 nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
 
-/*------MAIN-----*/
-
-body {
-    margin: auto;
-    padding: 1rem;
-    max-width: 60rem;
-  }
+/*------HEADER-----*/
 
 h1.headings {
     display: flex;
@@ -71,17 +74,36 @@ h1.headings {
 .subheading {padding: 0px;}
 
 .header-logo {
-    width: 15%;
-    height: auto;
-    margin: 0rem 1rem 0rem 0rem;
+    width: 30%;
+    margin: .3rem;
+    max-width: 5rem;
 }
-
-header img {width: 100%;}
+.header-logo img {width: 100%;}
 
 header {
     padding: 0px;
     display: flex;
     align-content: center;
+    background-color: #2ebfa5;
+    border-top: 3px solid silver;
+    border-left: 3px solid silver;
+    border-right: 3px solid silver;
+    border-radius: 5px 5px 0px 0px;
+    padding: 0px;
+    margin: auto;
+    width: 100%;
+    font-size: 80%;
+}
+
+/*-------MAIN-----*/
+
+main {
+    margin: auto;
+    max-width: 1400px;
+}
+
+body {
+    margin: auto;
 }
 .page-title {
     margin: 1rem 0rem 1rem 1rem;
@@ -152,22 +174,28 @@ form label.top input:required:valid {
     border-left: green solid 6px;
 }
 
-/*-------FOOTER----*/
+/*-----FOOTER----*/ 
 footer {
-    padding: 1rem .5rem 1rem .5rem;
+    background-color: #2ebfa5;
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    flex-direction:column-reverse;
+    border-radius: 5px;
 }
-.contact-info {
-    padding-left:0rem;
-    margin-left:20px;
-}
-.contact-info li {
-    margin-left: -25px;
-    list-style: none;
-}
-.contact-info button {
-    background-color: transparent;
+footer button {
     border: none;
+    background-color: transparent;
 }
-.social-media {
-    padding-left: 1.5rem;
+
+footer ul {list-style: none;}
+footer a {display: none;}
+
+.map-picture {
+    width: 60%;
+    max-width: 80rem;
+    margin: auto;
+    padding: 0rem;
 }
+.map-picture img {width: 100%;}
+footer p {display: none;}
+.contact-info h2 {padding-left: 1rem;}
