@@ -44,22 +44,27 @@ main {
 
 /*-------FOOTER----*/
 
-footer {
+.subfooter {
     display: grid;
     grid-auto-flow: column;
-    padding: 1rem 4rem 1rem 6rem;
+    padding: .5rem 2rem 1rem 2rem;
+    font-size: 125%;
+}
+.subfooter p button {
+    margin-left: .2rem;
 }
 .map-picture {
-    width: 60%;
+    width: 90%;
+    margin: auto;
 }
 
 .contact-info {
     display: block;
-    padding: 1rem 0rem 0rem 3rem;
+    padding: 1rem 0rem 0rem 2rem;
 }
 
 .contact-info img {
-    width: 2rem;
+    width: 25%;
     padding: .5rem;    
 }
 

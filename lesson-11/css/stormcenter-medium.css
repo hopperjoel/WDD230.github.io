@@ -22,42 +22,10 @@ form input.submit-button {
 
 /*------FOOTER-----*/
 
-footer a {
-    display: contents;
-}
-footer {
-    display: flex;
-    flex-direction: row;
-}
-.map-picture {
-    margin: 1rem auto;
-    margin-left: 1rem;
-}
-.footer-info {display: block;}
-.contact-info {
-    padding-left:0rem;
-    margin-right: 2rem;
-}
-.contact-info button {
-    padding: .3rem 0rem 0rem 0rem;
-    margin-left: -40px;
-    border:none;
-    background-color:transparent;
-}
-.contact-info h2{
+.subfooter {
+    display: block;
     text-align: center;
-}
-.contact-info li {
-    margin-right: 2rem;
-}
-.social-media {
-    margin-right: 5rem;
-    padding: .5rem;
-    justify-content: center;
-}
-.social-media img {
-    width: 20%;
-    padding: .2rem;
+    font-size: 120%;
 }
 
 

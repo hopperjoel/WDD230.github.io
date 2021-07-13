@@ -66,10 +66,6 @@ nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
 
 /*------BODY-------*/
 
-body {
-  margin: 0rem;
-  padding: 1rem;
-}
 
 /*------HEADER-----*/
 
@@ -107,6 +103,7 @@ header {
 main {
   margin: auto;
   max-width: 1400px;
+  padding: 1rem;
 }
 .banner{position: relative;}
 
@@ -151,30 +148,42 @@ main {
 }
 
 /*-------FOOTER----*/
-footer {
+.subfooter {
   background-color: #2ebfa5;
   font-family: 'Noto Sans', sans-serif;
-  display: flex;
-  flex-direction:column-reverse;
+  display: block;
   border-radius: 5px;
+  padding: 1rem .5rem 1rem .5rem;
 }
-footer button {
+.subfooter p button {
+  margin-left: -.3rem;
+}
+.contact-info button {
   border: none;
   background-color: transparent;
 }
 
-footer ul {list-style: none;}
-footer a {display: none;}
-
 .map-picture {
-  width: 60%;
+  width: 95%;
   max-width: 80rem;
-  margin: auto;
+  margin: .5rem auto;
   padding: 0rem;
 }
 .map-picture img {width: 100%;}
-footer p {display: none;}
 .contact-info h2 {padding-left: 1rem;}
-.wireframes a {
-    padding: .5rem;
+
+footer {
+  width: 100%;
+  background-color: #1a4d43;
+  color: white;
+  border-radius: 5px;
+  padding: .4rem;
+  margin: auto;
+}
+footer a:link, footer a:visited {
+  color: rgb(255, 248, 143);
+}
+footer {
+  display: block;
+  text-align: center;
 }

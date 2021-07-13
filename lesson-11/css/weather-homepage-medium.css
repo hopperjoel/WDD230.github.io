@@ -1,0 +1,43 @@
+/*------MAIN------*/
+
+main {
+    clear: both;
+    margin:auto;
+}
+.page-desc {
+    width: 50%;
+    top: 4rem;
+    font-size: 120%;
+}
+.town {
+    display: flex;
+    flex-direction: row;
+}
+.town:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+.name-motto {
+    text-align: center;
+    margin:auto;
+}
+.town h2 {
+    font-size: 200%;
+}
+.town-image {
+    width: 20rem;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+/*------FOOTER----*/
+
+.subfooter {
+    display: block;
+    text-align: center;
+    font-size: 120%;
+}
+.wireframes {
+    margin: 1rem 0rem;
+}
+.wireframes a {
+    padding: .5rem;
+}

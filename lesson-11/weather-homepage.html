@@ -25,10 +25,10 @@
   <nav>
     <button onclick="toggleMenu()"> &#9776;</button>
       <ul id="primaryNav" class="hide">
-        <li class="active"><a href="">Home</a></li>
+        <li class="active"><a href="weather-homepage.html">Home</a></li>
         <li><a href="preston.html">Preston</a></li>
-        <li><a href="">Soda Springs</a></li>
-        <li><a href="">Fish Haven</a></li>
+        <li><a href="soda-springs.html">Soda Springs</a></li>
+        <li><a href="fish-haven.html">Fish Haven</a></li>
         <li><a href="stormcenter.html">Storm Center</a></li>
         <li><a href="gallery.html">Gallery</a></li>
       </ul>
@@ -46,32 +46,48 @@
 
     </div>
   </main>
-    <footer>
-     <figure class = "map-picture">
-        <img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/map1200w.jpg" alt="location map">
+    <div class="subfooter">
+      <figure class = "map-picture">
+        <img src="images/preston-map.png" alt="location map">
       </figure>
-      <div class = "footer-info">
         <div class="contact-info">
-          <h2>
-            Contact Information
-          </h2>
-          <ul>
-            <li class="optional"><button id="phone">&#9991;</button>90099090</li>
-            <li><button id="email">&#9993;</button>email@perfectpreston.com</li>
-            <li><button id="phone">&#9742;</button>(111) 111-1111</li>
-          </ul>
+          <section>
+            <h3>
+              Perfect Preston Weather
+            </h3>
+            <p>
+            100 S 200 E
+            <br>
+            Preston, Idaho 83263
+            </p>
+            <p>
+              <button id="email">&#9993;</button> email@perfectpreston.com
+              <br>
+              <button id="phone">&#9742;</button> (111) 111-1111
+            </p>
+        
+            <div class = "social-media">
+              <a href="https://www.facebook.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/facebook.png" alt="facebook-icon"></a>
+              <a href="https://www.twitter.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/twitter.png" alt="twitter-icon"></a>
+              <a href="https://www.youtube.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/youtube.png" alt="youtube-icon"></a>
+            </div>
+          </section>
         </div>
-          <div class = "social-media">
-            <a href="https://www.facebook.com/" target="_blank"><img src="images\facebook.png" alt="facebook-icon"></a>
-            <a href="https://www.twitter.com/" target="_blank"><img src="images\twitter.png" alt="twitter-icon"></a>
-            <a href="https://www.youtube.com/" target="_blank"><img src="images\youtube.png" alt="youtube-icon"></a>
-        </div>
-      </div>
       <div class="wireframes">
         <a href="https://hopperjoel.github.io/WDD230.github.io/lesson-5/homepage-wireframe-large-screen.png" target="_blank">Large Wireframe</a>
         <a href="https://hopperjoel.github.io/WDD230.github.io/lesson-5/homepage-wireframe-medium-screen.png" target="_blank">Medium Wireframe</a>
         <a href="https://hopperjoel.github.io/WDD230.github.io/lesson-5/homepage-wireframe-small-screen.png" target="_blank">Small Wireframe</a>
       </div>
+    </div>
+  </main>
+    <footer>
+        <p>
+          <span class="copyright">&copy;2021</span>
+          | Joel Hopper | BYU-Idaho
+        </p>
+        <p>
+        <span id="datetime"></span> | 
+        <span><a class="assignment-portal" href="https://hopperjoel.github.io/WDD230.github.io/index.html">Assignment Portal</a></span>
     </footer>
   <script src="js\weather-homepage.js" defer></script>
   </body>

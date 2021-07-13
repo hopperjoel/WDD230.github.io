@@ -62,8 +62,12 @@ footer {
 
     body {
         margin: auto;
-        padding: 10px;
-        max-width: 1200px;
+        width: 100%;
+    }
+    main {
+        margin: auto;
+        padding: 1rem;
+        max-width: 1400px;
     }
     h1.headings {
         display: flex;
@@ -96,23 +100,44 @@ footer {
     
 
     /*-------FOOTER----*/
-    footer {
+    .subfooter {
+        background-color: #2ebfa5;
+        font-family: 'Noto Sans', sans-serif;
+        display: block;
+        border-radius: 5px;
         padding: 1rem .5rem 1rem .5rem;
     }
-    .contact-info {
-        padding-left:0rem;
-        margin-left:20px;
-    }
-    .contact-info li {
-        margin-left: -25px;
-        list-style: none;
+    .subfooter p button {
+        margin-left: -.3rem;
     }
     .contact-info button {
-        background-color: transparent;
         border: none;
+        background-color: transparent;
     }
-    .social-media {
-        padding-left: 1.5rem;
+    
+    .map-picture {
+        width: 95%;
+        max-width: 80rem;
+        margin: .5rem auto;
+        padding: 0rem;
+    }
+    .map-picture img {width: 100%;}
+    .contact-info h2 {padding-left: 1rem;}
+    
+    footer {
+        width: 100%;
+        background-color: #1a4d43;
+        color: white;
+        border-radius: 5px;
+        padding: .4rem;
+        margin: auto;
+    }
+    footer a:link, footer a:visited {
+        color: rgb(255, 248, 143);
+    }
+    footer {
+        display: block;
+        text-align: center;
     }
 }
 
@@ -146,37 +171,15 @@ footer {
 
     main {
         clear: both;
-        margin:auto;
-        max-width: 60rem;
     }
-
-
+        
 
     /*------FOOTER-----*/
 
-    footer p {display: none;}
-
-    footer button {
-      border: none;
-      background-color: transparent;
-    }
-    footer a {display: contents;}
-    footer {
-        display: flex;
-        flex-direction: row;
-    }
-    .footer-info {display: block;}
-
-    .contact-info {
-        padding-left:0rem;
-        margin-left:20px;
-    }
-    .contact-info li {
-        margin-left: -25px;
-        list-style: none;
-    }
-    .social-media {
-        padding-left: 1rem;
+    .subfooter {
+        display: block;
+        text-align: center;
+        font-size: 120%;
     }
 
 }
@@ -185,23 +188,34 @@ footer {
 @media only screen and (min-width: 1025px) {
 
 
-    footer {
+    .subfooter {
         display: grid;
         grid-auto-flow: column;
-        padding: 1rem 4rem 1rem 6rem;
+        padding: .5rem 2rem 1rem 2rem;
+        font-size: 125%;
     }
+    .subfooter p button {
+        margin-left: .2rem;
+    }
+    .map-picture {
+        width: 90%;
+        margin: auto;
+    }
+    
     .contact-info {
         display: block;
-        padding: 1rem 0rem 0rem 3rem;
+        padding: 1rem 0rem 0rem 2rem;
     }
-    .contact-info button {
-        padding: .3rem 0rem 0rem 0rem;
-        margin-left: -40px;
-        border:none;
-        background-color:transparent;
-    }
+    
     .contact-info img {
-        width: 2rem;
+        width: 25%;
         padding: .5rem;    
     }
+    
+    .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
 }
