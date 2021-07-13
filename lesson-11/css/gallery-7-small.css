@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Noto+Sans&display=swap');
+
+/*font-family: 'Noto Sans', sans-serif;*/
+header, h1, h2, h3 {
+    font-family: 'Arvo', serif;
+  }
+p, ul, li, a {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+  /*-------NAV----*/
+
+nav {
+    background-color: #fcf5c7;
+    font-family: Verdana, sans-serif;
+    width: 100%;
+    margin: auto;
+    border-right: 3px solid silver;
+    border-bottom: 3px solid silver;
+    border-left: 3px solid silver;
+    border-radius: 0px 0px 5px 5px;
+}
+nav button {
+    margin:.2rem 2%;
+    background-color: transparent;
+    border:none;
+    font-size: 1.6rem;
+}
+nav ul {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top:1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul.hide {display: none;}
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.2);
+    color: #fcf4c798;
+}
+
+nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+
+
+
+/*------HEADER-----*/
+
+h1.headings {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+.subheading {padding: 0px;}
+
+.header-logo {
+    width: 30%;
+    margin: .3rem;
+    max-width: 5rem;
+}
+.header-logo img {width: 100%;}
+
+header {
+    padding: 0px;
+    display: flex;
+    align-content: center;
+    background-color: #2ebfa5;
+    border-top: 3px solid silver;
+    border-left: 3px solid silver;
+    border-right: 3px solid silver;
+    border-radius: 5px 5px 0px 0px;
+    padding: 0px;
+    margin: auto;
+    width: 100%;
+    font-size: 80%;
+}
+
+/*-----Main----*/
+
+body {
+    margin: auto;
+}
+    .page-title {
+      margin: 1rem 0rem 1rem 0rem;
+      padding: 0rem 0rem 0rem .5rem;
+    }
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        padding: 10px;
+        max-width: 1400px;
+  }
+    figure {
+        width: 80%;
+        height: auto;
+        justify-self: center;
+    }
+    main figure img {
+        width: 100%;
+    }
+
+    .gallery-images figure img[data-src] {
+        filter: blur(0.2em);
+    }
+    
+    .gallery-images figure img {
+        filter: blur(0em);
+        transition: filter 0.5s;
+    }
+    .gallery-images figure {
+        border: 2px solid rgb(212, 212, 212);
+    }
+    .gallery-images figure figcaption{
+        opacity: 0.7;
+        text-align: center;
+    }
+/*-----Footer-----*/
+
+    footer {
+        background-color: #2ebfa5;
+        font-family: 'Noto Sans', sans-serif;
+        display: flex;
+        flex-direction:column-reverse;
+        border-radius: 5px;
+    }
+    footer button {
+        border: none;
+        background-color: transparent;
+    }
+    
+    footer ul {list-style: none;}
+    footer a {display: none;}
+    
+    .map-picture {
+        width: 60%;
+        max-width: 80rem;
+        margin: auto;
+        padding: 0rem;
+    }
+    .map-picture img {width: 100%;}
+    footer p {display: none;}
+    .contact-info h2 {padding-left: 1rem;}
+    
+

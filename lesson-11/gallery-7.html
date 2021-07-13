@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Preston</title>
+  <meta name="description" content="Preston, Idaho subpage for Perfect Preston Weather - Assignment for WDD230
+  at Brigham Young University - Idaho">
+  <link rel="stylesheet" href="https://hopperjoel.github.io/WDD230.github.io/styles/normalize.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 320px)" href="css/gallery-7-small.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 481px)" href="css/gallery-7-medium.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 1025px)" href="css/gallery-7-large.css">
+ <!-- <link rel="stylesheet" href="https://hopperjoel.github.io/WDD230.github.io/weather/CSS/gallery-7-small.css">-->
+</head>
+<body>
+  <header>
+    <!--add the weather logo from lesson two on here-->
+    <figure class = "header-logo">
+        <img src="images\noun_weather_edited.png" alt="logo">
+      <!--<img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/noun_weather_edited.png" alt="logo">-->
+    </figure>
+    <div class = "headings">
+      <h1>Perfect Preston Weather</h1>
+      <h3>So you can press on</h3>
+    </div>
+  </header>
+  <nav>
+    <button onclick="toggleMenu()"> &#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li> <a href="weather-homepage.html">Home</a></li>
+        <li> <a href="preston.html">Preston</a></li>
+        <li> <a href="">Soda Springs</a></li>
+        <li> <a href="">Fish Haven</a></li>
+        <li> <a href="stormcenter.html">Storm Center</a></li>
+        <li class="active"> <a href="https://hopperjoel.github.io/WDD230.github.io/weather/gallery-7.html">Gallery</a></li>
+      </ul>
+    </nav>
+  <main>
+    <h2 class="page-title">
+    Image Gallery
+    </h2>
+    <div class = "gallery-images">
+        <figure class="image-1">
+            <img src="https://via.placeholder.com/1200x800.png?text=Image+Loading" data-src="images\deer-in-snow-1200.jpg" alt="deer on a snowy mountain">
+            <figcaption>A head of deer by Sugar Creek</figcaption>
+        </figure>
+        <figure class="image-2">
+            <img src="https://via.placeholder.com/1200x800.png?text=Image+Loading" data-src="images\blue-sky-grass-1200.jpg" alt="blue sky with grass">
+            <figcaption>A bright blue spring sky by Franklin</figcaption> 
+        </figure>
+        <figure class="image-3">
+            <img src="https://via.placeholder.com/1066x1600.png?text=Image+Loading" data-src="images\dark-cabin-1600h.jpg" alt="dark cabin in woods">
+            <figcaption>An old cabin up Flat Canyon</figcaption>
+        </figure>
+        <figure class="image-4">
+            <img src="https://via.placeholder.com/1200x800.png?text=Image+Loading" data-src="images\foggy-pinetrees-1200.jpg" alt="pinetress with a foggy blanket">
+            <figcaption>Fog settling over pinetrees on Wilderness Peak</figcaption>
+        </figure>
+        <figure class="image-5">
+            <img src="https://via.placeholder.com/1200x800.png?text=Image+Loading" data-src="images\moon-at-dusk-1200.jpg" alt="A moon at dusk">
+            <figcaption>An old moon at dusk from Rocky Peak</figcaption>
+        </figure>
+        <figure class="image-6">
+            <img src="https://via.placeholder.com/1066x1600.png?text=Image+Loading" data-src="images\fall-creek-1600h.jpg" alt="A creek in the Fall">
+            <figcaption>Dry Creek in the Fall</figcaption>
+        </figure>
+        <figure class="image-7">
+            <img src="https://via.placeholder.com/1200x800.png?text=Image+Loading" data-src="images\rainbow-1200.jpg" alt="A rainbow over a field">
+            <figcaption>A big rainbow just outside of Preston</figcaption>
+        </figure>
+        <figure class="image-8">
+            <img src="https://via.placeholder.com/1200x800.png?text=Image+Loading" data-src="images\purple-lightning-1200.jpg" alt="Lightning during a thunderstorm">
+            <figcaption>Purple Lightning during a thunderstorm</figcaption>
+        </figure>
+        <figure class="image-9">
+            <img src="https://via.placeholder.com/1200x800.png?text=Image+Loading" data-src="images\snowy-mountain-1200.jpg" alt="A snowy mountain peak">
+            <figcaption>Snowy Paris Peak</figcaption>
+        </figure>
+    </div>
+  </main>
+    <footer>
+      <figure class = "map-picture">
+        <img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/map1200w.jpg" alt="location map">
+      </figure>
+      <div class = "footer-info">
+        <div class="contact-info">
+          <h2>
+            Contact Information
+          </h2>
+          <ul>
+            <li class="optional"><button id="phone">&#9991;</button> 90099090</li>
+            <li><button id="email">&#9993;</button> email@perfectpreston.com</li>
+            <li><button id="phone">&#9742;</button> (111) 111-1111</li>
+          </ul>
+        </div>
+          <div class = "social-media">
+            <a href="https://www.facebook.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/facebook.png" alt="facebook-icon"></a>
+            <a href="https://www.twitter.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/twitter.png" alt="twitter-icon"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/youtube.png" alt="youtube-icon"></a>
+        </div>
+        <p>Date/Time: <span id="datetime"></span></p>
+        <!--footer bar?-->
+      </div>
+    </footer>
+    <script src="js/gallery-7.js" defer></script>
+  <!--<script src="https://hopperjoel.github.io/WDD230.github.io/weather/js/gallery-7.js"></script>-->
+  </body>
+</html>

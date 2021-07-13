@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Perfect Preston Weather Stormcenter</title>
+  <meta name="description" content="Stormcenter subpage for Perfect Preston Weather - Assignment for WDD230
+  at Brigham Young University - Idaho">
+  <link rel="stylesheet" href="https://hopperjoel.github.io/WDD230.github.io/styles/normalize.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 320px)" href="css/stormcenter-small.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 481px)" href="css/stormcenter-medium.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 1025px)" href="css/stormcenter-large.css">
+  
+</head>
+<body>
+  <header>
+    <figure class = "header-logo">
+      <img src="images\noun_weather_edited.png" alt="logo">
+    </figure>
+    <div class="headings">
+      <h1>Perfect Preston Weather</h1>
+      <h3>So you can press on</h3>
+    </div>
+  </header>
+  <nav>
+    <button onclick="toggleMenu()"> &#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="weather-homepage.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="">Soda Springs</a></li>
+        <li><a href="">Fish Haven</a></li>
+        <li class="active"> <a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery-7.html">Gallery</a></li>
+      </ul>
+    </nav>
+  <main>
+    <h1 class="page-title">Stormcenter</h1>
+    <p class="page-syn">Report dangerous weather conditions or phenomenon</p>
+    <form action="thank-you.html">
+        <fieldset>
+            <legend>Personal Info</legend>
+            <label class="top">Full Name<input type="text" name="name" required pattern="[^0-9]{5,}"></label>
+            <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+            <label class="top">Phone Number<input type="tel" name="phone" required></label>
+            <label class="top">Zip Code<input type="number" name="zip-code" required pattern="{5}"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Storm Information</legend>
+            <label class="top">Storm Date<input type="date" name="date"></label>
+            <label class="top">Storm Type
+                <input list="storm-type">
+                <datalist id="storm-type">
+                    <option value="Blizzard">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="High Winds">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+            </label>
+            <label class="top">Storm Severity (from 1 to 10)<input type="range" name="severity" min="0" max="10"></label>
+            <label class="top">Storm Region
+                <select name="region">
+                    <option value="">Please Select</option>
+                <option value="preston">Preston</option>
+                <option value="soda-springs">Soda Springs</option>
+                <option value="fish-haven">Fish Haven</option>
+                </select>
+            </label>
+            <div>In-Danger Level</div>
+            <label class="sbs"><input type="radio" name="in-danger" value="yes">Yes</label>
+            <label class="sbs"><input type="radio" name="in-danger" value="no">No</label>
+            <label class="sbs"><input type="radio" name="in-danger" value="maybe">Maybe</label>
+            <label class="top" id="optional">Additional Information or Comments<input type="textarea" name="comments"></label>
+        </fieldset>
+        <input type="submit" value="Report This Storm" class="submit-button">
+    </form>
+
+  </main>
+    <footer>
+      <figure class = "map-picture">
+        <img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/map1200w.jpg" alt="location map">
+      </figure>
+      <div class = "footer-info">
+        <div class="contact-info">
+          <h2>
+            Contact Information
+          </h2>
+          <ul>
+            <li class="optional"><button id="phone">&#9991;</button> 90099090</li>
+            <li><button id="email">&#9993;</button> email@perfectpreston.com</li>
+            <li><button id="phone">&#9742;</button> (111) 111-1111</li>
+          </ul>
+        </div>
+          <div class = "social-media">
+            <a href="https://www.facebook.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/facebook.png" alt="facebook-icon"></a>
+            <a href="https://www.twitter.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/twitter.png" alt="twitter-icon"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/youtube.png" alt="youtube-icon"></a>
+        </div>
+        <p>Date/Time: <span id="datetime"></span></p>
+        <!--footer bar?-->
+      </div>
+    </footer>
+  <script src="js/stormcenter.js" defer></script>
+  </body>
+</html>

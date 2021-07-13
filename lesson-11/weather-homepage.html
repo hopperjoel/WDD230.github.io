@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Perfect Preston Weather Homepage</title>
+  <meta name="description" content="Homepage for Perfect Preston Weather site - Assignment for WDD230
+  at Brigham Young University - Idaho">
+  <link rel="stylesheet" href="https://hopperjoel.github.io/WDD230.github.io/styles/normalize.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 320px)" href="css\weather-homepage-small.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 481px)" href="css\weather-homepage-medium.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 1025px)" href="css\weather-homepage-large.css">
+  
+</head>
+<body>
+  <header>
+    <figure class = "header-logo">
+      <img src="images\noun_weather_edited.png" alt="logo">
+    </figure>
+    <div class="headings">
+      <h1>Perfect Preston Weather</h1>
+      <h3>So you can press on</h3>
+    </div>
+  </header>
+  <nav>
+    <button onclick="toggleMenu()"> &#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li class="active"><a href="">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="">Soda Springs</a></li>
+        <li><a href="">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery-7.html">Gallery</a></li>
+      </ul>
+    </nav>
+  <main>
+    <div class="banner">
+        <figure class="hero-image">
+            <img src="images\homepage-banner.jpg" alt="hero image of weather scene">
+        </figure>
+        <p class="page-desc"> Welcome to Perfect Preston Weather! <br>
+        We cover weather and local events for Preston, Idaho and the surrounding area.
+        </p>
+    </div>
+    <div class="cards">
+
+    </div>
+  </main>
+    <footer>
+     <figure class = "map-picture">
+        <img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/map1200w.jpg" alt="location map">
+      </figure>
+      <div class = "footer-info">
+        <div class="contact-info">
+          <h2>
+            Contact Information
+          </h2>
+          <ul>
+            <li class="optional"><button id="phone">&#9991;</button>90099090</li>
+            <li><button id="email">&#9993;</button>email@perfectpreston.com</li>
+            <li><button id="phone">&#9742;</button>(111) 111-1111</li>
+          </ul>
+        </div>
+          <div class = "social-media">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images\facebook.png" alt="facebook-icon"></a>
+            <a href="https://www.twitter.com/" target="_blank"><img src="images\twitter.png" alt="twitter-icon"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="images\youtube.png" alt="youtube-icon"></a>
+        </div>
+      </div>
+      <div class="wireframes">
+        <a href="https://hopperjoel.github.io/WDD230.github.io/lesson-5/homepage-wireframe-large-screen.png" target="_blank">Large Wireframe</a>
+        <a href="https://hopperjoel.github.io/WDD230.github.io/lesson-5/homepage-wireframe-medium-screen.png" target="_blank">Medium Wireframe</a>
+        <a href="https://hopperjoel.github.io/WDD230.github.io/lesson-5/homepage-wireframe-small-screen.png" target="_blank">Small Wireframe</a>
+      </div>
+    </footer>
+  <script src="js\weather-homepage.js" defer></script>
+  </body>
+</html>
