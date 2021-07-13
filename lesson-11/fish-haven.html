@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Preston</title>
-  <meta name="description" content="Preston, Idaho subpage for Perfect Preston Weather - Assignment for WDD230
+  <title>Fish Haven</title>
+  <meta name="description" content="Fish Haven, Idaho subpage for Perfect Preston Weather - Assignment for WDD230
   at Brigham Young University - Idaho">
   <link rel="stylesheet" href="https://hopperjoel.github.io/WDD230.github.io/styles/normalize.css">
-  <link rel="stylesheet" media="only screen and (min-device-width: 320px)" href="css/preston-small.css">
-  <link rel="stylesheet" media="only screen and (min-device-width: 481px)" href="css/preston-medium.css">
-  <link rel="stylesheet" media="only screen and (min-device-width: 1025px)" href="css/preston-large.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 320px)" href="css/fish-haven-small.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 481px)" href="css/fish-haven-medium.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 1025px)" href="css/fish-haven-large.css">
 </head>
 <body>
   <header>
@@ -25,20 +25,20 @@
     <button onclick="toggleMenu()"> &#9776;</button>
       <ul id="primaryNav" class="hide">
         <li> <a href="weather-homepage.html">Home</a></li>
-        <li class="active"> <a href="preston.html">Preston</a></li>
+        <li> <a href="preston.html">Preston</a></li>
         <li> <a href="soda-springs.html">Soda Springs</a></li>
-        <li> <a href="fish-haven.html">Fish Haven</a></li>
+        <li class="active"> <a href="fish-haven.html">Fish Haven</a></li>
         <li> <a href="stormcenter.html">Storm Center</a></li>
         <li> <a href="gallery.html">Gallery</a></li>
       </ul>
     </nav>
-    <div class="announcement" id="friday-announcement">
+    <!--<div class="announcement" id="friday-announcement">
       <h1>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</h1>
-    </div>
+    </div>-->
   <main>
     <div class="hero-weather">
       <h2 class="page-title">
-          Preston Idaho
+          Fish Haven Idaho
       </h2>
       <picture class="hero-image">
           <source media="(min-width: 1025px)" srcset="https://hopperjoel.github.io/WDD230.github.io/weather/images/wdd230_image_franklin 1400w.jpeg">
@@ -89,7 +89,7 @@
           </div>
       </div>
     </div>
-    <div class = "bottom-article">
+<div class = "bottom-article">
       <figure class = "article-image">
         <img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/independence-day-parade-1200w.jpg" alt="article-picture of parade">
       </figure>
@@ -104,48 +104,33 @@
         parade running from 600 N to 400 S Main Street.
       </p>
     </div>
-    <div class="subfooter">
+  </main>
+    <footer>
       <figure class = "map-picture">
         <img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/map1200w.jpg" alt="location map">
       </figure>
       <div class = "footer-info">
         <div class="contact-info">
-          <section>
-            <h3>
-              Perfect Preston Weather
-            </h3>
-            <p>
-            100 S 200 E
-            <br>
-            Preston, Idaho 83263
-            </p>
-            <p>
-              <button id="email">&#9993;</button> email@perfectpreston.com
-              <br>
-              <button id="phone">&#9742;</button> (111) 111-1111
-            </p>
-        
-            <div class = "social-media">
-              <a href="https://www.facebook.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/facebook.png" alt="facebook-icon"></a>
-              <a href="https://www.twitter.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/twitter.png" alt="twitter-icon"></a>
-              <a href="https://www.youtube.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/youtube.png" alt="youtube-icon"></a>
-            </div>
-          </section>
+          <h2>
+            Contact Information
+          </h2>
+          <ul>
+            <li class="optional"><button id="location">&#9991;</button> 90099090</li>
+            <li><button id="email">&#9993;</button> email@perfectpreston.com</li>
+            <li><button id="phone">&#9742;</button> (111) 111-1111</li>
+          </ul>
         </div>
-    </div>
-  </main>
-    <footer>
-        <p>
-          <span class="copyright">&copy;2021</span>
-          | Joel Hopper | BYU-Idaho
-        </p>
-        <p>
-        <span id="datetime"></span> | 
-        <span><a class="assignment-portal" href="https://hopperjoel.github.io/WDD230.github.io/index.html">Assignment Portal</a></span>
+          <div class = "social-media">
+            <a href="https://www.facebook.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/facebook.png" alt="facebook-icon"></a>
+            <a href="https://www.twitter.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/twitter.png" alt="twitter-icon"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/youtube.png" alt="youtube-icon"></a>
+        </div>
+        <p>Date/Time: <span id="datetime"></span></p>
+        <!--footer bar?-->
       </div>
     </footer>
-  <script src="https://hopperjoel.github.io/WDD230.github.io/lesson-11/js/preston.js"></script>
+  <script src="https://hopperjoel.github.io/WDD230.github.io/lesson-11/js/fish-haven.js"></script>
   <!--<script src="js/preston.js"></script> -->
-  <script src="https://hopperjoel.github.io/WDD230.github.io/lesson-11/js/preston-weatherapi.js"></script>
+  <script src="https://hopperjoel.github.io/WDD230.github.io/lesson-11/js/fish-haven-weatherapi.js"></script>
   </body>
 </html>
