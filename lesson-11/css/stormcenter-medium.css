@@ -27,6 +27,8 @@ form input.submit-button {
     text-align: center;
     font-size: 120%;
 }
-
+.social-media a img{
+    width: 8%;
+}
 
 

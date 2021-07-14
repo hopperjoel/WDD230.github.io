@@ -136,6 +136,9 @@ main {
     width: 15%;
     padding: .5rem;    
 }
+.social-media a img {
+    width: 12%
+}
 
 .clearfix:after {
     content: "";

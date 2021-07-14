@@ -90,6 +90,9 @@ main {
   width: 15%;
   padding: .5rem;    
 }
+.social-media a img {
+  width: 12%
+}
 .wireframes {
   margin: 2rem 1rem 1rem 2rem;
   display: flex;

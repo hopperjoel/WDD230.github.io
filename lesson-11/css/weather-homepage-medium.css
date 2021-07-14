@@ -41,3 +41,6 @@ main {
 .wireframes a {
     padding: .5rem;
 }
+.social-media a img{
+    width: 8%;
+}
