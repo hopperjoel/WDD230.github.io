@@ -121,6 +121,25 @@ main {
 
 .five-day-forecast { display: none;}
 
+.events {
+    margin: 3rem auto;
+    border: 10px solid rgb(236, 148, 114);
+    background-color: #a2d1c8;
+    border-radius: 5px;
+    text-align: center;
+    width: 95%;
+    font-size: 90%;
+}
+.events h2 {
+    border-bottom: 2px solid red;
+    width: 50%;
+    margin: 1rem auto;
+    padding-bottom: .8rem;
+}
+.events h3 {
+    padding-bottom: .5rem;
+}
+
 .article-image {
     max-width: 100%;
     margin: auto;

@@ -63,6 +63,10 @@ main {
     margin: 4rem 0rem;
     padding: 0rem 0rem 4rem 1rem;
 }
+.events {
+    width: 50%;
+    font-size: 110%;
+}
 
 /*------FORECAST BAR------*/
 
