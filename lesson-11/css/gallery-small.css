@@ -130,7 +130,6 @@ main figure img {
     display: block;
     border-radius: 5px;
     padding: 1rem .5rem 1rem .5rem;
-    width: 80rem;
 }
 .subfooter p button {
     margin-left: -.3rem;
@@ -141,7 +140,7 @@ main figure img {
 }
 
 .map-picture {
-    width: 95%;
+    width: 70%;
     max-width: 80rem;
     margin: .5rem auto;
     padding: 0rem;
@@ -164,4 +163,3 @@ footer {
     display: block;
     text-align: center;
 }
-
