@@ -85,43 +85,43 @@ header {
 body {
     margin: auto;
 }
-    .page-title {
-      margin: 1rem 0rem 1rem 0rem;
-      padding: 0rem 0rem 0rem .5rem;
-    }
-    main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin: auto;
-        padding: 10px;
-        max-width: 1400px;
-  }
-    figure {
-        width: 80%;
-        height: auto;
-        justify-self: center;
-    }
-    main figure img {
-        width: 100%;
-    }
+.page-title {
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 0rem 0rem 0rem .5rem;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 10px;
+    max-width: 1400px;
+}
+figure {
+    width: 80%;
+    height: auto;
+    justify-self: center;
+}
+main figure img {
+    width: 100%;
+}
 
-    .gallery-images figure img[data-src] {
-        filter: blur(0.2em);
-    }
-    
-    .gallery-images figure img {
-        filter: blur(0em);
-        transition: filter 0.5s;
-    }
-    .gallery-images figure {
-        border: 2px solid rgb(212, 212, 212);
-    }
-    .gallery-images figure figcaption{
-        opacity: 0.7;
-        text-align: center;
-    }
+.gallery-images figure img[data-src] {
+    filter: blur(0.2em);
+}
+
+.gallery-images figure img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+.gallery-images figure {
+    border: 2px solid rgb(212, 212, 212);
+}
+.gallery-images figure figcaption{
+    opacity: 0.7;
+    text-align: center;
+}
 /*-----Footer-----*/
 
 .subfooter {
@@ -130,6 +130,7 @@ body {
     display: block;
     border-radius: 5px;
     padding: 1rem .5rem 1rem .5rem;
+    width: 80rem;
 }
 .subfooter p button {
     margin-left: -.3rem;
