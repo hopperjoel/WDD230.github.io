@@ -1,3 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=M+PLUS+Rounded+1c&display=swap');
+
+/*-----FONTS-----*/
+
+h1, h2, h3 {
+    font-family: 'Concert One', cursive;
+}
+p, nav, li, a, label {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+/*-------HEADER-------*/
+
+
+/*--------NAV-------*/
+
+nav {
+    background-color: #2EC4B6;
+    opacity: .5;
+    width: 100%;
+    margin: auto;
+    border-radius: 0px 0px 5px 5px;
+}
+nav button {
+    margin:.2rem 2%;
+    background-color: transparent;
+    border:none;
+    font-size: 1.6rem;
+}
+nav ul {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top:1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul.hide {display: none;}
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.2);
+    color: #fcf4c798;
+}
+
+nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+
+
+/*--------MAIN-------*/
+
+
+/*-------HERO SLIDESHOW------*/
 
 * {box-sizing:border-box}
 
@@ -93,3 +148,9 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+
+/*-------FOOTER-------*/
+
+
+
+
