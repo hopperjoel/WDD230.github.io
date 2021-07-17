@@ -5,27 +5,60 @@
 h1, h2, h3 {
     font-family: 'Concert One', cursive;
 }
-p, nav, li, a, label {
+p, nav, li, a, label, figcaption {
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 /*-------HEADER-------*/
 
+header {
+  margin: 1rem 0rem 0rem 0rem;
+  padding: 0;
+  background: transparent;
+  display: flex;
+  flex-flow: row;
+  position: relative;
+  z-index: 0;
+}
+
+.header-logo {
+  width: 50%;
+  margin: 1rem 1rem .5rem .5rem;
+}
+.header-logo img {
+  width: 100%;
+}
+.headings {
+  margin: .5rem 0rem;
+}
 
 /*--------NAV-------*/
 
 nav {
-    background-color: #2EC4B6;
-    opacity: .5;
-    width: 100%;
-    margin: auto;
-    border-radius: 0px 0px 5px 5px;
+  background: rgba(46, 196, 182, 0.8);
+  width: 100%;
+  margin: auto;
+  border-radius: 0px 0px 5px 5px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-out;
 }
+nav.fixed-top {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  background: rgba(46, 196, 182, 0.3);
+}
+.navbar.fixed-top a {
+  color: rgb(255, 120, 90);
+}
+nav:hover {background: rgba(46, 196, 182, 0.8);}
 nav button {
     margin:.2rem 2%;
     background-color: transparent;
     border:none;
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 nav ul {
     list-style-type: none;
@@ -41,16 +74,68 @@ nav ul li a {
 }
 
 nav ul.hide {display: none;}
+
 nav ul li.active a {
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(46, 196, 182, 0.4);
     color: #fcf4c798;
 }
-
 nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
 
+.reservation-btn {
+  background: rgba(255, 120, 90, 0.8);
+  border-radius: 3px;
+  width: 20%;
+  height: 4rem;
+  padding: .5rem;
+  float: right;
+  text-align: center;
+}
+.reservation-btn a {
+  text-decoration: none;
+  color: white;
+}
+.reservation-btn:hover {
+  background: rgba(255, 120, 90, 1);
+  color: black;
+}
 
 /*--------MAIN-------*/
-
+main {
+  max-width: 1400px;
+  margin: auto;
+}
+.hero-banner {
+  margin: .1rem auto;
+  font-style: italic;
+  padding: .5rem;
+}
+.rental-cards {
+  display: block;
+  margin: auto;
+  padding: .5rem;
+}
+.card-image {
+  width: 95%;
+  margin: auto;
+  text-align: center;
+}
+.card-image img {
+  width: 100%;
+  border-radius: 3px;
+}
+.current-weather {
+  background: rgba(255, 120, 90, 0.7);
+  font-size: 110%;
+  margin: 2rem auto;
+  padding: .5rem;
+  border: 3px solid rgba(73, 106, 129, 0.8);
+  border-radius: 5px;
+}
+.current-weather h3 {
+  text-align: center;
+  border-bottom: 2px solid rgba(73, 106, 129, .8);
+}
+.five-day-forecast {display: none;}
 
 /*-------HERO SLIDESHOW------*/
 
@@ -58,30 +143,25 @@ nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1200px;
+  width: 100%;
   position: relative;
   margin: auto;
+  max-height: 100rem;
+  align-items: center;
+  justify-items: center;
 }
 
 /* Hide the images by default */
-.heroSlides {
+.hero-slide {
   display: none;
+}
+.hero-slide img {
+  max-width: 100%;
 }
 
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+  display: none;
 }
 
 /* Position the "next button" to the right */
@@ -108,27 +188,12 @@ nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
 
 /* Number text (1/3 etc) */
 .slide-text {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+  display: none;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
+  display: none;
 }
 
 /* Fading animation */
@@ -151,6 +216,16 @@ nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
 
 /*-------FOOTER-------*/
 
-
+footer {
+  display: block;
+  background: rgb(73, 106, 129);
+  padding: 1rem;
+  color: white;
+  text-align: center;
+}
+.social-media a{
+  padding: 0rem 0.5rem;
+  max-width: 70%;
+}
 
 

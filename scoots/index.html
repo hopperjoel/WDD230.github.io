@@ -8,20 +8,11 @@
   at Brigham Young University - Idaho">
   <link rel="stylesheet" href="https://hopperjoel.github.io/WDD230.github.io/styles/normalize.css">
   <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 320px)" href="css/homepage-small.css">
-  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 481px)" href="css/fish-haven-medium.css">
-  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 1025px)" href="css/fish-haven-large.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 481px)" href="css/homepage-medium.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 1025px)" href="css/homepage-large.css">
 </head>
 <body>
-  <header>
-    <figure class = "header-logo">
-      <img src="images\scoots-logo.png" alt="logo">
-    </figure>
-    <div class = "headings">
-      <h1>Scoots</h1>
-      <h3>Scooters, ATV's, and Jeep's</h3>
-    </div>
-  </header>
-  <nav><!--Need to make navigation bar sticky with opacity-->
+<nav id="nav-solid" class="hide"><!--Need to make navigation bar sticky with opacity-->
     <button onclick="toggleMenu()"> &#9776;</button>
       <ul id="primaryNav" class="hide">
         <li class="active"><a href="index.html">Home</a></li>
@@ -32,38 +23,46 @@
         <!--Need to add a phone number item here-->
         <li><a href="tel:011-52-999-999-9999"></a>011-52-999-999-9999</li>
       </ul>
-      <div class="btn-container"><a href="reservations.html" class="btn">Reserve Now!</a></div>
-    </nav>
+    <div class="reservation-btn"><a href="reservations.html" class="btn">Reserve Now!</a></div>
+</nav>
+  <header>
+    <figure class = "header-logo">
+      <img src="images\scoots-logo.png" alt="logo">
+    </figure>
+    <div class = "headings">
+      <h2>Scooters, ATV's, and Jeep's</h2>
+    </div>
+  </header>
   <main>
     <div class="hero-image">
         <div class="slideshow-container">
         <!-- Full-width images with number and caption text -->
-            <div class="heroSlide fade">
+            <div class="hero-slide fade">
                 <div class="slide-text">1 / 5</div>
-                    <img src="images/pexels-justin-brinkhoff-cozumel-banner-2800w.jpg">
-                <div class="hero-caption">Caption Text</div>
+                    <img src="images\cozumel-beach-banner-2000w-pexels-justin-brinkhoff-5844598.jpg">
+                <div class="hero-caption">Photo by Justin Brinkhoff - Pexels</div>
             </div>
 
-            <div class="heroSlide fade">
+            <div class="hero-slide fade">
                 <div class="slide-text">2 / 5</div>
                     <img src="images/kids-on-jeep-banner-2800w-pexels-nathan-moore-2479633.jpg" style="width:100%">
-                <div class="hero-caption">Caption Two</div>
+                <div class="hero-caption">Photo by Nathan Moore - Pexels</div>
             </div>
 
-            <div class="heroSlide fade">
+            <div class="hero-slide fade">
                 <div class="slide-text">3 / 5</div>
                     <img src="images/pexels-adi-perets-cozumel-banner-3-1980w.jpg" style="width:100%">
-                <div class="hero-caption">Caption Three</div>
+                <div class="hero-caption">Photo by Adi Perets - Pexels</div>
             </div>
-            <div class="heroSlide fade">
+            <div class="hero-slide fade">
                 <div class="slide-text">4 / 5</div>
                     <img src="images/muddy-jeep-banner-2800w-jeff-james-0u9QXu57KXY-unsplash.jpg" style="width:100%">
-                <div class="hero-caption">Caption Four</div>
+                <div class="hero-caption">Photo by Jeff James - Unsplash</div>
             </div>
-            <div class="heroSlide fade">
+            <div class="hero-slide fade">
                 <div class="slide-text">5 / 5</div>
                     <img src="images/girl-scooter-island-2800w-pexels-artem-beliaikin-809609.jpg" style="width:100%">
-                <div class="hero-caption">Caption Five</div>
+                <div class="hero-caption">Photo by Artem Beliaikin - Pexels</div>
             </div>
 
             <!-- Next and previous buttons -->
@@ -80,13 +79,13 @@
             <span class="dot" onclick="currentSlide(4)"></span>
             <span class="dot" onclick="currentSlide(5)"></span>
         </div>
-        <div class="hero-banner">
+    <div class="hero-banner">
         <p>Cozumel's Stop for Recreational Land Rentals!</p>
     </div>
     <section class="rental-cards">
         <div class="scooters">
             <h3>Scooter Rentals</h3>
-            <figure class="card-img">
+            <figure class="card-image">
                 <img src="images\pexels-pixabay-metro-scooter-1000w.jpg" alt="A classic blue scooter">
                 <figcaption>From $20</figcaption>
             </figure>
@@ -95,7 +94,7 @@
         </div>
         <div class="atvs">
             <h3>ATV Rentals</h3>
-            <figure class="card-img">
+            <figure class="card-image">
                 <img src="images\atv-1000w-pxfuel-com.jpg" alt="a 4-person side-by-side on the beach">
                 <figcaption>From $50</figcaption>
             </figure>
@@ -104,7 +103,7 @@
         </div>
         <div class="jeeps">
             <h3>Jeep Rentals</h3>
-            <figure class="card-img">
+            <figure class="card-image">
                 <img src="images\2-person-jeep-1000w.jpg" alt="a black 2-person jeep">
                 <figcaption>From $60</figcaption>
             </figure>
@@ -115,7 +114,7 @@
     <section class="weather-summary">
         <div class="current-weather">
             <h3>
-            Today's Weather
+            Cozumel Conditions
             </h3>
             <p>Currently: <span id="current-condition"></span></p>
             <p>Temperature: <span id="current-temp"></span> &deg;F</p>
@@ -165,8 +164,8 @@
         <a href="https://www.youtube.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/youtube.png" alt="youtube-icon"></a>
         <a href="https://www.youtube.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/youtube.png" alt="trip-advisor-icon"></a>
     </div>
-    <p>Scoots Motor Rentals | &copy;BYU-I 2021 | 011-52-999-999-9999 | contact@scootsmotors.com</p>
-    <p>Joel Hopper | BYU-Idaho | <span id="datetime"></span> | 
+    <p>Scoots Motor Rentals | &copy;BYU-I 2021 <br> 011-52-999-999-9999 <br> contact@scootsmotors.com</p>
+    <p>Joel Hopper | BYU-Idaho <span id="datetime"></span><br>
     <span><a class="assignment-portal" href="https://hopperjoel.github.io/WDD230.github.io/index.html">Assignment Portal</a></span> | 
     <a class="attributions" href="resources.html">Attributions</a>
     </footer>
