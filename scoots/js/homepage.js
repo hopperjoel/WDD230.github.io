@@ -18,18 +18,19 @@ function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("hide");
 };
 
-function floatingNav() {
-  const navbar = document.querySelector("nav");
-  const navbarHeight = 100;
-  const distanceFromTop = Math.abs(
-    document.body.getBoundingClientRect().top
-  );
+// function floatingNav() {
+//   const navbar = document.querySelector("nav");
+//   const navbarHeight = 100;
+//   const distanceFromTop = Math.abs(
+//     document.body.getBoundingClientRect().top
+//   );
 
-  if (distanceFromTop >= navbarHeight) {navbar.classList.add("fixed-top");}
-  else {navbar.classList.remove("fixed-top");}
-};
+//   if (distanceFromTop >= navbarHeight) {
+//       navbar.classList.add("fixed-top"); }
+//   else {navbar.classList.remove("fixed-top");}
+//   };
 
-document.addEventListener("scroll", floatingNav());
+// document.addEventListener("scroll", floatingNav());
     
 // var button = document.querySelector("button");
 // noOpacity = false;
@@ -42,4 +43,4 @@ document.addEventListener("scroll", floatingNav());
 //     document.getElementsByTagName("nav").style.backgroundColor = "rgba(46, 196, 182, 1.0)";
 //     noOpacity = true;
 //   }
-// });
+// }); {navbar.classList.add("fixed-top"); 
