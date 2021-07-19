@@ -1,52 +1,47 @@
 {
-"rental items and prices":[
-    {"Honda Metro Scooter": [
-        1,
-        "$20",
-        "$30",
-        "$25",
-        "$30"
-    ]
+"rentals":[
+    {"name":"Honda Metro Scooter",
+        "maxPersons": 1,
+        "reservationHalf": "$20",
+        "reservationFull": "$30",
+        "walkInHalf": "$25",
+        "walkInFull": "$30"
     }
-    ,{"Honda Dio Scooter": [
-        2,
-        "$20",
-        "$40",
-        "$35",
-        "$40"
-    ]
+    ,{"name": "Honda Dio Scooter",
+        "maxPersons": 2,
+        "reservationHalf": "$20",
+        "reservationFull": "$40",
+        "walkInHalf": "$35",
+        "walkInFull": "$40"
+    
     }
-    ,{"Honda PCX150": [
-        2,
-        "$40",
-        "$50",
-        "$45",
-        "$50"
-    ]
+    ,{"name": "Honda PCX150",
+        "maxPersons": 2,
+        "reservationHalf": "$40",
+        "reservationFull": "$50",
+        "walkInHalf": "$45",
+        "walkInFull": "$50"
     }
-    ,{"Honda Pioneer ATV": [
-        4,
-        "$50",
-        "$70",
-        "$60",
-        "$70"
-    ]
+    ,{"name": "Honda Pioneer ATV",
+        "maxPersons": 4,
+        "reservationHalf": "$50",
+        "reservationFull": "$70",
+        "walkInHalf": "$60",
+        "walkInFull": "$70"
     }
-    ,{"Jeep Wrangler-4 door with A/C": [
-        5,
-        "$70",
-        "$100",
-        "$85",
-        "$100"
-    ]
+    ,{"name": "Jeep Wrangler-4 door with A/C",
+        "maxPersons": 5,
+        "reservationHalf": "$70",
+        "reservationFull": "$100",
+        "walkInHalf": "$85",
+        "walkInFull": "$100"
     }
-    ,{"Jeep Wrangler-2 door": [
-        4,
-        "$60",
-        "$85",
-        "$70",
-        "$85"
-    ]
+    ,{"name": "Jeep Wrangler-2 door",
+        "maxPersons": 4,
+        "reservationHalf": "$60",
+        "reservationFull": "$85",
+        "walkInHalf": "$70",
+        "walkInFull": "$85"
     }
 ]
 }

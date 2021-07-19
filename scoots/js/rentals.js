@@ -1,3 +1,37 @@
+
+const requestURL = "https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json"
+
+fetch(requestURL)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {
+        console.table(jsonObject)
+        const rentals = jsonObject['rentals'];
+        for (let i = 0; i < rentals.length; i++ ) {
+
+            let tr = document.createElement('tr');
+            let name = document.createElement('td');
+            let max = document.createElement('td');
+            let resHalf = document.createElement('td');
+            let resFull = document.createElement('td');
+            let walkHalf = document.createElement('td');
+            let walkFull = document.createElement('td');
+            name.textContent = rentals[i].name;
+            max.textContent = rentals[i].maxPersons;
+            resHalf.textContent = rentals[i].reservationHalf;
+            resFull.textContent = rentals[i].reservationFull;
+            walkHalf.textContent = rentals[i].walkInHalf;
+            walkFull.textContent = rentals[i].walkInFull;
+
+            tr.appendChild(name).appendChild(max).appendChild(resHalf).appendChild(resFull).appendChild(walkHalf).appendChild(walkFull);
+            document.querySelector('table.rental-table').appendChild(tr);
+        }
+    });
+
+
+
+
 function addPrices() {
     //Build an array containing Customer records.
     var customers = new Array();
