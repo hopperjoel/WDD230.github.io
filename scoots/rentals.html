@@ -7,20 +7,11 @@
   <meta name="description" content="Rentals Subpage for Scoots Website - Assignment for WDD230
   at Brigham Young University - Idaho">
   <link rel="stylesheet" href="https://hopperjoel.github.io/WDD230.github.io/styles/normalize.css">
-  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 320px)" href="css/fish-haven-small.css">
-  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 481px)" href="css/fish-haven-medium.css">
-  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 1025px)" href="css/fish-haven-large.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 320px)" href="css/rentals-small.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 481px)" href="css/rentals-medium.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 1025px)" href="css/rentals-large.css">
 </head>
 <body>
-  <header>
-    <figure class = "header-logo">
-      <img src="" alt="logo">
-    </figure>
-    <div class = "headings">
-      <h1>Scoots</h1>
-      <h3></h3>
-    </div>
-  </header>
   <nav>
     <button onclick="toggleMenu()"> &#9776;</button>
       <ul id="primaryNav" class="hide">
@@ -29,30 +20,33 @@
         <li> <a href="reservations.html">Reservations</a></li>
         <li> <a href="tours.html">Tours</a></li>
         <li> <a href="contact.html">Contact</a></li>
+        <li class="phone"><a href="tel:011-52-999-999-9999"></a>011-52-999-999-9999</li>
       </ul>
+        <div class="reservation-btn"><a href="reservations.html" class="btn">Reserve Now!</a></div>
     </nav>
+  <header>
+    <figure class = "header-logo">
+      <img src="images\scoots-logo.png" alt="logo">
+    </figure>
+    <div class = "headings">
+      <h2>Scooters, ATV's, and Jeep's</h2>
+    </div>
+  </header>
   <main>
     <section class="rental-cards">
       <div class="scooters">
           <h3>Honda Motor Scooter Rentals</h3>
-          <div class="slideshow-container">
-            <div class="vehicle-img fade">
-                  <img src="images\pexels-pixabay-metro-scooter-1000w.jpg" alt="blue scooter">
-                <div class="image-caption">Photo by Pexels/Pixabay</div>
-            </div>
-
-            <div class="vehicle-img fade">
+            <figure class="vehicle-img">
                   <img src="images\scooter-2-1200w.jpg" alt="Red Dio scooter">
-                <div class="image-caption">Photo by Pexels/Pixabay</div>
-            </div>
-          </div>
+                <figcaption class="image-caption">Photo by Pexels/Pixabay</figcaption>
+            </figure>
           <p>Our scooters are a fantastic way to get around the island! Enjoy the fresh breeze as you
             see the sights and explore. These scooters are perfect for the individual or couple who plan
             to enjoy all the Cozumel has to offer without excessively paying for taxies or relying on 
             hotel transportation. Our half-day rental is also an excellent choice for cruise excurions.<br>
             Our scooters range from a single seat to a double.
           </p>
-          <div class="jeeps vehicle-list">
+          <div class="vehicle-list">
             <ul>
                 <li>Honda Metropolitan (49cc)— 1 person</li>
                 <li>Honda Dio (110cc)— 2 person</li>
@@ -70,7 +64,7 @@
             to offer before cruising back to into town to enjoy the city. These ATV's offer responsive steering and
             handling to safely explore anything. Room and seatbelts for 4 people.
           </p>
-          <div class="jeeps vehicle-list">
+          <div class="vehicle-list">
             <ul>
                 <li>Honda Pioneer 1000- 4 people max</li>
             </ul>
@@ -78,23 +72,16 @@
       </div>
       <div class="jeeps">
           <h3>Jeep Rentals</h3>
-          <div class="slideshow-container">
-            <div class="vehicle-img fade">
-                  <img src="images\2-person-jeep-1000w.jpg" alt="black 2-door Jeep">
-                <div class="image-caption">Photo by flickr</div>
-            </div>
-
-            <div class="vehicle-img fade">
+            <figure class="jeep-slide vehicle-img">
                   <img src="images\jeep-4-person-1000w.jpg" alt="black 4-door Jeep">
-                <div class="image-caption">Photo by flickr</div>
-            </div>
-          </div>
+                <figcaption class="image-caption">Photo by flickr</figcaption>
+            </figure>
           <p>Our Jeeps offer the best of all worlds: modified suspension and handling to tackle the toughest of trails,
             all the comforts and amenities you would expect from a car. Our 4-door Wranglers are big enough to handle 5 people
             with extra space for luggage. Our 2-door Wranglers are perfect for 2 with a little extra carrying space.<br>
             The 2-door Wrangler sports a manual transmission.
           </p>
-          <div class="jeeps vehicle-list">
+          <div class="vehicle-list">
             <ul>
               <li>4-door Jeep Wrangler—manual with A/C— 5 people max</li>
               <li>2-door Jeep Wrangler—open air—manual— 4 people max</li>
@@ -102,46 +89,54 @@
           </div>
       </div>
   </section>
-  <h2>Rental Information</h2>
-    <ul>
-        <li>A $50 security deposit is required to confirm reservations.</li>
-        <li>A valid drivers license is required in hand at time of rental.</li>
-        <li>No one under 12 years of age is allowed to ride on the scooters.</li>
-        <li>Fuel charge not included.</li>
-        <li>Unlimited mileage.</li>
-        <li>Liability insurance is free of charge.</li>
-        <li>Reservations rate requires 24 hour prior notification.</li>
-        <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
-        <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
-        <li>Rentals may be returned to either location.</li>
-    </ul>
-
-        <h2>Max Persons and Price Chart</h2>
-        <table class="rental-table">
-            <tr>
-              <th colspan="6">Max Persons and Price Chart (includes Tax)</th>
-            </tr>
-            <tr>
-              <th colspan="2"></th>
-                <th colspan="2">Reservation</th>
-                <th colspan="2">Walk-In</th>
-            </tr>
-            <tr>
-                <th>Rental Type</th>
-                <th>Max. Persons</th>
-                <th>Half Day (3 hrs)</th>
-                <th>Full Day</th>
-                <th>Half Day (3 hrs)</th>
-                <th>Full Day</th>
-            <tr>
-        </table>
+  <section class="rental-section">
+    <div class="rental-chart">
+      <table class="rental-table">
+          <tr>
+            <th colspan="6">Max Persons and Price Chart (includes Tax)</th>
+          </tr>
+          <tr>
+            <th colspan="2"></th>
+              <th colspan="2">Reservation</th>
+              <th colspan="2">Walk-In</th>
+          </tr>
+          <tr>
+              <th>Rental Type</th>
+              <th>Max. Persons</th>
+              <th>Half Day (3 hrs)</th>
+              <th>Full Day</th>
+              <th>Half Day (3 hrs)</th>
+              <th>Full Day</th>
+          <tr>
+      </table>
+      </div>
+      <div class="general-info">
+        <h2>Rental Information</h2>
+        <ul>
+            <li>A $50 security deposit is required to confirm reservations.</li>
+            <li>A valid drivers license is required in hand at time of rental.</li>
+            <li>No one under 12 years of age is allowed to ride on the scooters.</li>
+            <li>Fuel charge not included.</li>
+            <li>Unlimited mileage.</li>
+            <li>Liability insurance is free of charge.</li>
+            <li>Reservations rate requires 24 hour prior notification.</li>
+            <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+            <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+            <li>Rentals may be returned to either location.</li>
+        </ul>
+      </div>
+    </section>
+    <div class="res-actioncall" id="popup">
+      <h2>Reserve in Advance and Save!</h2>
+      <a href="reservations.html"><button>Let's Ride</button></a>
+    </div>
   </main>
   <footer>
     <div class = "social-media">
-        <a href="https://www.facebook.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/facebook.png" alt="facebook-icon"></a>
-        <a href="https://www.twitter.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/twitter.png" alt="instagram-icon"></a>
-        <a href="https://www.youtube.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/youtube.png" alt="youtube-icon"></a>
-        <a href="https://www.youtube.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/youtube.png" alt="trip-advisor-icon"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/scoots/images/facebook-icon.png" alt="facebook-icon"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/scoots/images/instagram-icon.png" alt="instagram-icon"></a>
+        <a href="https://www.youtube.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/scoots/images/youtube-icon.png" alt="youtube-icon"></a>
+        <a href="https://www.tripadvisor.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/scoots/images/tripadvisor.png" alt="trip-advisor-icon"></a>
     </div>
     <p>Scoots Motor Rentals | &copy;BYU-I 2021 <br> 011-52-999-999-9999 <br> contact@scootsmotors.com</p>
     <p>Joel Hopper | BYU-Idaho <span id="datetime"></span><br>

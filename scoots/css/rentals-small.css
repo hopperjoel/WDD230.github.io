@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=M+PLUS+Rounded+1c&display=swap');
+
+/*-----FONTS-----*/
+
+h1, h2, h3, button {
+    font-family: 'Concert One', cursive;
+}
+p, nav, li, a, label, figcaption {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+/*-------HEADER-------*/
+
+header {
+  margin: 1rem 0rem 0rem 0rem;
+  padding: 0;
+  background: transparent;
+  display: flex;
+  flex-flow: row;
+}
+
+.header-logo {
+  width: 50%;
+  margin: 1rem 1rem .5rem .5rem;
+}
+.header-logo img {
+  width: 100%;
+}
+.headings {
+  margin: .5rem 0rem;
+}
+
+/*--------NAV-------*/
+
+nav {
+  background: rgba(46, 196, 182, 0.8);
+  width: 100%;
+  margin: auto;
+  border-radius: 0px 0px 5px 5px;
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
+  bottom: 0;
+  z-index: 2;
+  /* -webkit-transform: translateZ(0); */
+}
+
+nav:hover {background: rgba(46, 196, 182, 0.8);}
+nav button {
+    margin:.2rem 2%;
+    background-color: transparent;
+    border:none;
+    font-size: 2rem;
+}
+nav ul {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top:1px solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(46, 196, 182, 0.8);
+}
+
+nav ul.hide {display: none;}
+
+nav ul li.active a {
+    color: #f1f09de7;
+}
+nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+
+.reservation-btn {
+  background: rgba(255, 120, 90, 0.8);
+  border-radius: 3px;
+  width: 20%;
+  height: 4rem;
+  padding: .5rem;
+  float: right;
+  text-align: center;
+  font-weight: 600;
+}
+.reservation-btn a {
+  text-decoration: none;
+  color: white;
+}
+.reservation-btn:hover {
+  background: black;
+  color: black;
+}
+.phone {
+  display:none;
+}
+
+/*--------MAIN-------*/
+main {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.res-actioncall {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom:0;
+  top:20rem;
+  margin: auto;
+  padding: 1rem;
+  background:rgba(46, 196, 182, 0.6);
+  color: black;
+  text-align: center;
+  border:5px solid rgb(73, 106, 129);
+  border-radius: 5px;
+  max-width: 80%;
+  font-size: 75%
+}
+.res-actioncall button{
+  font-size: 140%;
+  background:rgba(73, 106, 129, 0.8);
+  color: white;
+  border-radius: 3px;
+}
+
+.rental-cards {
+    display: block;
+    margin: auto;
+    padding: .5rem; 
+}
+.rental-cards img {
+  box-shadow: 5px 5px 5px grey;
+  border-radius: 3px;
+}
+.scooters, .atvs, .jeeps {
+  background:rgba(93, 122, 143, 0.2);
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+.scooters, .atvs, .jeeps h3 {
+  text-align: center;
+  font-size: 120%;
+}
+.vehicle-img {
+    width: 90%;
+    margin:auto;
+}
+.vehicle-img img {
+    width: 100%;
+}
+
+.rental-chart {
+    background-color:rgba(400, 400, 400, .5);
+    border: 5px solid black;
+    border-radius: 5px;
+    margin: 1rem auto;
+}
+.rental-table {
+    font-size: 110%;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+thead th:nth-child(1) {
+    width: 50%;
+}
+thead th:nth-child(2) {
+    width: 10%;
+}
+thead th:nth-child(3) {
+    width: 10%;
+}
+thead th:nth-child(4) {
+    width: 10%;
+}
+thead th:nth-child(5) {
+    width: 10%;
+}
+thead th:nth-child(6) {
+    width: 10%;
+}
+th {padding:10px 20px;}
+td {padding: 10px;}
+table td {
+    text-align: center;
+}
+.general-info {
+    margin: 2rem .5rem;
+    border: 5px solid black;
+    padding: .5rem 2rem .5rem -1rem;
+    border-radius: 5px;
+    background-image: linear-gradient(rgba(255, 120, 90, 0.5), rgba(255, 120, 90, 0.2))
+}
+.general-info h2 {
+    text-align: center;
+}
+
+/*-------FOOTER-------*/
+
+footer {
+  display: block;
+  background: rgb(73, 106, 129);
+  padding: 1rem;
+  color: white;
+  text-align: center;
+}
+.social-media a{
+  padding: 0rem 0.5rem;
+  max-width: 50%;
+}
+.social-media img {
+  border-radius: 50%;
+  max-width: 10%;
+}
+.social-media img:hover {
+  background-color: rgba(400, 400, 400, .5);
+}
+
+

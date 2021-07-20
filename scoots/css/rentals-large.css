@@ -1,0 +1,95 @@
+/*-------HEADER-------*/
+
+.header-logo {
+    width: 150px;
+  }
+  .headings {
+    margin: 2rem 0rem;
+  }
+    /*--------NAV-------*/
+    
+  nav button {display:none;}
+  
+  nav ul li a:hover {
+      color: rgb(255, 120, 90);
+  }
+  nav ul.hide {
+      display: flex;
+      flex-direction: row;
+      justify-content: right;
+  }
+  nav ul {
+      margin: auto;
+      list-style: none;
+  }
+  nav ul li a {
+      border: none;
+      background: rgba(46, 196, 182, 0.8);
+  } 
+  nav ul li {
+      padding:0%;
+      margin: 0%;
+      text-align: center;
+      width: 100%;
+      font-size: 130%;
+  }
+  nav ul li a:hover {background: rgba(46, 196, 182, 0.8);}
+  nav ul li.active a {color: #f1f09de7;}
+  nav ul li.active {background: rgba(46, 196, 182, 0.8);}
+  nav ul li.active a:hover {color: #a8a764e7;}
+  .reservation-btn {
+    padding: 1rem 0rem 1rem 0rem;
+  }
+    
+    
+    /*--------MAIN-------*/
+  
+  
+    .res-actioncall {
+      position: -webkit-sticky;
+      position: sticky;
+      bottom:0;
+      top:4.5rem;
+      padding: 3rem;
+      background:rgba(255, 120, 90, 0.7);
+      color: white;
+      text-align: center;
+      border:5px solid rgb(73, 106, 129);
+      border-radius: 5px;
+      max-width: 40%;
+      max-height: 15rem;
+      font-size: 110%;
+    }
+    .rental-cards {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      flex-direction: row;
+      margin: 5rem auto;
+    }
+    .vehicle-img {
+      max-width: 40rem;
+      float: right;
+      margin: 1rem;
+    }
+    .scooters, .atvs, .jeeps h3 {
+      font-size: 140%;
+    }
+    .scooters, .atvs, .jeeps {
+      border: 5px solid silver;
+      margin: 0rem 1rem 0rem 1rem;
+      border-radius: 5px;
+    }
+    .scooters p, .atvs p, .jeeps p {
+      padding: 0rem .5rem;
+      margin: 1rem;
+      font-size: 130%;
+    }
+    
+    
+    /*-------FOOTER-------*/
+    
+    .social-media img {
+      max-width: 50px;
+    }
+    
