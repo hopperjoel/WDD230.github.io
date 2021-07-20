@@ -219,5 +219,8 @@ footer {
   padding: 0rem 0.5rem;
   max-width: 70%;
 }
+.social-media img {
+  border-radius: 50%;
+}
 
 

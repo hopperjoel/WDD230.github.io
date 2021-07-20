@@ -19,15 +19,15 @@
     font-weight: 600;
   }
   .icon-cards {
-    display:flex;
+    display: inline-flex;
     flex-direction: row;
     text-align: center;
     font-weight: 600;
     font-size: 130%;
-    margin: auto;
+    margin: 2rem 0rem 2rem 10rem;
   }
   .icon {
-      width: 25%;
+      width: 15%;
   }
   .icon img {
       width: 100%;
