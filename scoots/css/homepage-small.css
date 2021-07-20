@@ -98,6 +98,9 @@ main {
   font-style: italic;
   padding: .5rem;
 }
+.icon-cards {
+  display:none;
+}
 .rental-cards {
   display: block;
   margin: auto;
