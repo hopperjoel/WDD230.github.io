@@ -9,11 +9,8 @@
   /*--------NAV-------*/
   
 nav button {display:none;}
-nav:hover {
-    background: rgba(46, 196, 182, 0.9);
-}
+
 nav ul li a:hover {
-    background-color: rgba(0,0,0,0.0);
     color: rgb(255, 120, 90);
 }
 nav ul.hide {
@@ -27,6 +24,7 @@ nav ul {
 }
 nav ul li a {
     border: none;
+    background: rgba(46, 196, 182, 0.8);
 } 
 nav ul li {
     padding:0%;
@@ -35,6 +33,10 @@ nav ul li {
     width: 100%;
     font-size: 130%;
 }
+nav ul li a:hover {background: rgba(46, 196, 182, 0.8);}
+nav ul li.active a {color: #f1f09de7;}
+nav ul li.active {background: rgba(46, 196, 182, 0.8);}
+nav ul li.active a:hover {color: #a8a764e7;}
 .reservation-btn {
   padding: 1rem 0rem 1rem 0rem;
 }
@@ -49,6 +51,19 @@ nav ul li {
   }
   .icon-cards {
     justify-content: space-evenly;
+  }
+  .res-actioncall {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom:0;
+    top:4.5rem;
+    padding: 3rem;
+    background:rgba(255, 120, 90, 0.7);
+    color: white;
+    text-align: center;
+    border:5px solid rgb(73, 106, 129);
+    border-radius: 5px;
+    max-width: 25%;
   }
   .rental-cards {
     display: flex;

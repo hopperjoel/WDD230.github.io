@@ -2,7 +2,7 @@
 
 /*-----FONTS-----*/
 
-h1, h2, h3 {
+h1, h2, h3, button {
     font-family: 'Concert One', cursive;
 }
 p, nav, li, a, label, figcaption {
@@ -37,8 +37,10 @@ nav {
   width: 100%;
   margin: auto;
   border-radius: 0px 0px 5px 5px;
+  position: -webkit-sticky;
   position: sticky;
   top:0;
+  /* -webkit-transform: translateZ(0); */
 }
 
 nav:hover {background: rgba(46, 196, 182, 0.8);}
@@ -64,7 +66,6 @@ nav ul li a {
 nav ul.hide {display: none;}
 
 nav ul li.active a {
-    background-color: rgba(46, 196, 182, 0.8);
     color: #f1f09de7;
 }
 nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
@@ -99,32 +100,70 @@ main {
   padding: .5rem;
 }
 .icon-cards {
-  display:none;
+  display:block;
+  margin:auto;
 }
+.icon {
+  max-width: 40%;
+}
+.icon img {
+  width: 100%;
+}
+.atv-icon-card, .scooter-icon-card, .jeep-icon-card {
+  margin: 1rem auto;
+}
+.res-actioncall {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom:0;
+  top:3rem;
+  margin: auto;
+  padding: 1rem;
+  background:rgba(46, 196, 182, 0.6);
+  color: black;
+  text-align: center;
+  border:5px solid rgb(73, 106, 129);
+  border-radius: 5px;
+  max-width: 80%;
+  font-size: 75%
+}
+.res-actioncall button{
+  font-size: 140%;
+  background:rgba(73, 106, 129, 0.8);
+  color: white;
+  border-radius: 3px;
+}
+
 .rental-cards {
   display: block;
-  margin: auto;
+  margin: 2rem auto;
   padding: .5rem;
 }
+.scooters, .atvs, .jeeps {
+  margin-bottom: 5rem;
+}
+
 .card-image {
   width: 95%;
   margin: auto;
   text-align: center;
+  
 }
 .card-image img {
   width: 100%;
   border-radius: 3px;
 }
 .current-weather {
-  background: rgba(255, 120, 90, 0.7);
+  background-image: linear-gradient(rgba(255, 120, 90, 0.9), rgba(255, 120, 90, 0.6), rgba(255, 92, 56, 0.3));
   font-size: 110%;
   margin: 2rem auto;
-  padding: .5rem;
+  padding: .1rem 1rem;
   border: 3px solid rgba(73, 106, 129, 0.8);
   border-radius: 5px;
 }
 .current-weather h3 {
   text-align: center;
+  font-size: 140%;
   border-bottom: 2px solid rgba(73, 106, 129, .8);
 }
 .five-day-forecast {display: none;}
