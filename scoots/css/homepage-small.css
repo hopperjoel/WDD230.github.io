@@ -88,6 +88,9 @@ nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
   background: black;
   color: black;
 }
+.phone {
+  display:none;
+}
 
 /*--------MAIN-------*/
 main {
@@ -101,7 +104,8 @@ main {
 }
 .icon-cards {
   display:block;
-  margin:auto;
+  margin:0;
+  text-align: center;
 }
 .icon {
   max-width: 40%;
@@ -109,9 +113,12 @@ main {
 .icon img {
   width: 100%;
 }
-.atv-icon-card, .scooter-icon-card, .jeep-icon-card {
-  margin: 1rem auto;
+.card {
+  align-self: center;
+  text-align: center;
+  margin: 0rem 0rem 0rem 5rem;
 }
+
 .res-actioncall {
   position: -webkit-sticky;
   position: sticky;
@@ -140,7 +147,7 @@ main {
   padding: .5rem;
 }
 .scooters, .atvs, .jeeps {
-  margin-bottom: 5rem;
+  margin-top: 4rem;
 }
 
 .card-image {
@@ -256,10 +263,11 @@ footer {
 }
 .social-media a{
   padding: 0rem 0.5rem;
-  max-width: 70%;
+  max-width: 50%;
 }
 .social-media img {
   border-radius: 50%;
+  max-width: 15%;
 }
 
 

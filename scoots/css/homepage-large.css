@@ -47,10 +47,16 @@ nav ul li.active a:hover {color: #a8a764e7;}
     max-width: 1400px;
   }
   .icon {
-    width: 40%;
+    width: 50%;
   }
   .icon-cards {
+    display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
+    margin: auto;
+  }
+  .card {
+    margin: 2rem 0rem 2rem 4rem;
   }
   .res-actioncall {
     position: -webkit-sticky;
@@ -63,7 +69,8 @@ nav ul li.active a:hover {color: #a8a764e7;}
     text-align: center;
     border:5px solid rgb(73, 106, 129);
     border-radius: 5px;
-    max-width: 25%;
+    max-width: 40%;
+    max-height: 15rem;
   }
   .rental-cards {
     display: flex;
@@ -107,6 +114,7 @@ nav ul li.active a:hover {color: #a8a764e7;}
   .current-weather {
     grid-column: 1 / 3;
     grid-row: 2;
+    opacity: 1;
   }
   .five-day-forecast {
     display: contents;
