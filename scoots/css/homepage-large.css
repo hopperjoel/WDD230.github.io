@@ -260,3 +260,7 @@ nav ul li.active a:hover {color: #a8a764e7;}
   
   /*-------FOOTER-------*/
   
+  .social-media img {
+    max-width: 50px;
+  }
+  

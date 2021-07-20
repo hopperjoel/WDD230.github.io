@@ -17,14 +17,14 @@ function toggleMenu() {
     console.log(document.getElementById("primaryNav").classList);
     document.getElementById("primaryNav").classList.toggle("hide");
 };
-const eatShit = document.querySelector("#popup");
+const garbageJS = document.querySelector("#popup");
   // document.getElementById("popup").addEventListener("wheel", actionTimer, false);
 
 function actionTimer() {
-  console.log("Piece of mother shit");
+  console.log("Miracle, it's working!");
   document.getElementById("popup").style.display = "block";
 }
-eatShit.addEventListener("wheel", actionTimer, false);
+garbageJS.addEventListener("wheel", actionTimer, false);
 
 // function floatingNav() {
 //   const navbar = document.querySelector("nav");

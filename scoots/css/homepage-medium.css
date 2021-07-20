@@ -6,24 +6,70 @@
   }
   .headings {
     margin: auto 1rem;;
-  }
-  header {
-    position: relative;
-  }
-  .phone {
-    display: content;
+    font-size: 125%;
   }
  
   /*--------NAV-------*/
   
-  nav {
-    height: 5rem;
-  }
-  nav button {
-    margin:.5rem 2%;
-    background-color: transparent;
-    border:none;
-    font-size: 3rem;
+nav button {
+  margin: .5rem;
+  background-color: transparent;
+  border:none;
+  font-size: 3rem;
+}
+nav {
+  background: rgba(46, 196, 182, 0.8);
+  max-width: 100%;
+  margin: 0rem auto 0rem auto; 
+  border-radius: 0px 0px 5px 5px;
+  position: -webkit-sticky;
+  position: sticky;
+  top:0;
+  height: 4rem;
+  /* -webkit-transform: translateZ(0); */
+}
+
+nav:hover {background: rgba(46, 196, 182, 0.8);}
+nav ul {
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top:1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul.hide {display: none;}
+
+nav ul li.active a {
+    color: #f1f09de7;
+}
+nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+
+.reservation-btn {
+  background: rgba(255, 120, 90, 0.8);
+  border-radius: 3px;
+  width: 20%;
+  height: 4rem;
+  padding: .5rem;
+  float: right;
+  text-align: center;
+  font-weight: 600;
+}
+.reservation-btn a {
+  text-decoration: none;
+  color: white;
+}
+.reservation-btn:hover {
+  background: black;
+  color: black;
+}
+.phone {
+  display:none;
 }
   /*--------MAIN-------*/
   
@@ -97,3 +143,7 @@
 
   
   /*-------FOOTER-------*/
+
+  footer img {
+    max-width: 25px;
+  }

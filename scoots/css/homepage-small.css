@@ -40,6 +40,7 @@ nav {
   position: -webkit-sticky;
   position: sticky;
   top:0;
+  z-index: 2;
   /* -webkit-transform: translateZ(0); */
 }
 
@@ -61,6 +62,7 @@ nav ul li a {
     text-decoration: none;
     color: #000;
     border-top:1px solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(46, 196, 182, 0.8);
 }
 
 nav ul.hide {display: none;}
@@ -267,7 +269,10 @@ footer {
 }
 .social-media img {
   border-radius: 50%;
-  max-width: 15%;
+  max-width: 10%;
+}
+.social-media img:hover {
+  background-color: rgba(400, 400, 400, .5);
 }
 
 
