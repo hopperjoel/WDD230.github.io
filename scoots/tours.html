@@ -7,83 +7,93 @@
   <meta name="description" content="Tours Subpage for Scoots Website - Assignment for WDD230
   at Brigham Young University - Idaho">
   <link rel="stylesheet" href="https://hopperjoel.github.io/WDD230.github.io/styles/normalize.css">
-  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 320px)" href="css/fish-haven-small.css">
-  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 481px)" href="css/fish-haven-medium.css">
-  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 1025px)" href="css/fish-haven-large.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 320px)" href="css/tours-small.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 481px)" href="css/tours-medium.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 1025px)" href="css/tours-large.css">
 </head>
 <body>
-  <header>
-    <figure class = "header-logo">
-      <img src="" alt="logo">
-    </figure>
-    <div class = "headings">
-      <h1>Scoots</h1>
-      <h3></h3>
-    </div>
-  </header>
-  <nav>
+  <nav id="nav-solid" class="hide"><!--Need to make navigation bar sticky with opacity-->
     <button onclick="toggleMenu()"> &#9776;</button>
-      <ul id="primaryNav" class="hide">
-        <li> <a href="index.html">Home</a></li>
-        <li> <a href="rentals.html">Rentals</a></li>
-        <li> <a href="reservations.html">Reservations</a></li>
-        <li class="active"> <a href="tours.html">Tours</a></li>
-        <li> <a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <ul id="primaryNav" class="hide">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="rentals.html">Rentals</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="tours.html">Tours</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <!--Need to add a phone number item here-->
+        <li class="phone"><a href="tel:011-52-999-999-9999"></a>011-52-999-999-9999</li>
+    </ul>
+    <div class="reservation-btn"><a href="reservations.html" class="btn">Reserve Now!</a></div>
+</nav>
+<header>
+  <figure class = "header-logo">
+    <img src="images\scoots-logo.png" alt="logo">
+  </figure>
+  <div class = "headings">
+    <h2>Scooters, ATV's, and Jeep's</h2>
+  </div>
+</header>
   <main>
-    <h2>Cozumel Attractions</h2>
-    <div class="scoot-tour">
-      <h3>Scoots Guided Tours</h3>
-      <figure class="scoot-tour-img">
-        <img src="images\offroad-jeep-tours-shuja-unsplash.jpg" alt="two jeeps on jungle trail">
-        <figcaption>photo by Shuja - Unsplash</figcaption>
-      </figure>
-      <p>Scoots offers guided tours for Jeep and ATV rentals from December through May. These
-        tours explore many classic sites and trails across the island and include a lunch, drinks,
-      and tour guides for archeological and ecological attractions. Check our reservations page
-    for more details.</p>
-    </div>
-    <section class="attractions">
-      <h3>Additional Cozumel Attractions</h3>
-      <a class="first-attraction" src="https://www.tripadvisor.com/Attraction_Review-g13882869-d17634956-Reviews-Mayan_Bee_Sanctuary-San_Miguel_de_Cozumel_Cozumel_Yucatan_Peninsula.html">
-        <h3>Mayan Bee Sanctuary</h3>
-        <figure class="first-attraction-img">
-          <img src="https://scontent-den4-1.xx.fbcdn.net/v/t1.6435-9/67305412_334743434143975_5907368542281400320_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=973b4a&_nc_ohc=HIrBCJqzYsoAX_HzXCS&_nc_ht=scontent-den4-1.xx&oh=99d1e6a738c8865fc12b395d3fdeeec2&oe=60F9E20C" alt="Mayan Bee Ceremony">
-          <figcaption>Information and photo from Trip Advisor</figcaption>
+    <h1 class="page-title">Cozumel Tours</h1>
+    <div class="attractions">
+      <div class="scoot-tour attraction">
+        <h2>Scoots Guided Tours</h2>
+        <figure class="img-container">
+          <img src="images\offroad-jeep-tours-shuja-unsplash.jpg" alt="two jeeps on jungle trail">
+          <figcaption>photo by Shuja - Unsplash</figcaption>
         </figure>
-        <p>The Mayan Bee Sanctuary it´s a place to discover the stingless bee and the Melipona honey. 
-          The Mayan Bee Sanctuary, is an interactive place in which you become in an explorer of the 
-          history of one of the most nutritional food in the world. Behind The Mayan Bee Santuary there 
-          is one of the largest operators of tourism of Mexico, Aviomar Adventours, a company with over 
-          50 years of experience and hig</p>
-      </a>
-      <a class="second-attraction" src="https://www.cozumelchef.com/">
-        <h3>Cozumel Chef Food Tours</h3>
-        <figure class="second-attraction-img">
-          <img src="https://www.cozumelchef.com/wp-content/uploads/2010/07/Residencias-Reef-Dinner-for-8-@-8.jpg" alt="local cozumel entree">
-        </figure>
-        <p>Experience the variety that Mexico has to offer! Sample local dishes along with traditional
-          national dishes and modern culinary creations. Cozumel Chef includes many tour, restaurant, and
-          learning opportunities.
-        </p>
-      </a>
-
+        <p>Scoots offers guided tours for Jeep and ATV rentals from December through May. These
+          tours explore many classic sites and trails across the island and include a lunch, drinks,
+        and tour guides for archeological and ecological attractions. Check our reservations page
+      for more details.</p>
       </div>
-    </section>
+      <h2 class="add-attraction">Additional Cozumel Attractions</h2>
+      <div class="first-at attraction">
+        <a href="https://www.tripadvisor.com/Attraction_Review-g13882869-d17634956-Reviews-Mayan_Bee_Sanctuary-San_Miguel_de_Cozumel_Cozumel_Yucatan_Peninsula.html" target="_blank">
+          <h2>Mayan Bee Sanctuary</h2>
+          <figure class="img-container">
+            <img src="https://scontent-den4-1.xx.fbcdn.net/v/t1.6435-9/67305412_334743434143975_5907368542281400320_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=973b4a&_nc_ohc=HIrBCJqzYsoAX_HzXCS&_nc_ht=scontent-den4-1.xx&oh=99d1e6a738c8865fc12b395d3fdeeec2&oe=60F9E20C" alt="Mayan Bee Ceremony">
+            <figcaption>Information and photo from Trip Advisor</figcaption>
+          </figure>
+          <p>The Mayan Bee Sanctuary it´s a place to discover the stingless bee and the Melipona honey. 
+            The Mayan Bee Sanctuary, is an interactive place in which you become in an explorer of the 
+            history of one of the most nutritional food in the world. Behind The Mayan Bee Santuary there 
+            is one of the largest operators of tourism of Mexico, Aviomar Adventours, a company with over 
+            50 years of experience.
+          </p>
+        </a>
+      </div>
+      <div class="second-at attraction">
+        <a href="https://www.cozumelchef.com/" target="_blank">
+          <h2>Cozumel Chef Food Tours</h2>
+          <figure class="img-container">
+            <img src="https://www.cozumelchef.com/wp-content/uploads/2010/07/Residencias-Reef-Dinner-for-8-@-8.jpg" alt="local cozumel entree">
+          </figure>
+          <p>Experience the variety that Mexico has to offer! Sample local dishes along with traditional
+            national dishes and modern culinary creations. Cozumel Chef includes many tour, restaurant, and
+            learning opportunities.
+          </p>
+        </a>
+      </div>
+    </div>
+    <div class="res-actioncall" id="popup">
+      <h2>Reserve in Advance and Save!</h2>
+      <a href="reservations.html"><button>Let's Ride</button></a>
+    </div>
   </main>
   <footer>
-    <div class = "social-media">
-        <a href="https://www.facebook.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/facebook.png" alt="facebook-icon"></a>
-        <a href="https://www.twitter.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/twitter.png" alt="instagram-icon"></a>
-        <a href="https://www.youtube.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/youtube.png" alt="youtube-icon"></a>
-        <a href="https://www.youtube.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/youtube.png" alt="trip-advisor-icon"></a>
-    </div>
-    <p>Scoots Motor Rentals | &copy;BYU-I 2021 <br> 011-52-999-999-9999 <br> contact@scootsmotors.com</p>
-    <p>Joel Hopper | BYU-Idaho <span id="datetime"></span><br>
-    <span><a class="assignment-portal" href="https://hopperjoel.github.io/WDD230.github.io/index.html">Assignment Portal</a></span> | 
-    <a class="attributions" href="resources.html">Attributions</a>
-    </footer>
+    <footer>
+      <div class = "social-media">
+          <a href="https://www.facebook.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/scoots/images/facebook-icon.png" alt="facebook-icon"></a>
+          <a href="https://www.instagram.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/scoots/images/instagram-icon.png" alt="instagram-icon"></a>
+          <a href="https://www.youtube.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/scoots/images/youtube-icon.png" alt="youtube-icon"></a>
+          <a href="https://www.tripadvisor.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/scoots/images/tripadvisor.png" alt="trip-advisor-icon"></a>
+      </div>
+      <p>Scoots Motor Rentals | &copy;BYU-I 2021 <br> 011-52-999-999-9999 <br> contact@scootsmotors.com</p>
+      <p>Joel Hopper | BYU-Idaho <span id="datetime"></span><br>
+      <span><a class="assignment-portal" href="https://hopperjoel.github.io/WDD230.github.io/index.html">Assignment Portal</a></span> | 
+      <a class="attributions" href="resources.html">Attributions</a>
+      </footer>
 </body>
 <script src="js/rentals.js"></script>
 </html>

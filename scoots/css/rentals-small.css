@@ -122,6 +122,9 @@ main {
   color: white;
   border-radius: 3px;
 }
+.res-actioncall button:hover {
+  color:rgba(46, 196, 182, 0.6);
+}
 
 .rental-cards {
     display: block;
