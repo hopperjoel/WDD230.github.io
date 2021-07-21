@@ -74,7 +74,7 @@ nav ul li.active a:hover {color: #a8a764e7;}
   }
   .rental-cards {
     display: flex;
-    flex-wrap: row;
+    flex-direction: row;
     margin: 5rem auto;
   }
   .rental-cards img {
