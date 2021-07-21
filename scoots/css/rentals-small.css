@@ -191,7 +191,7 @@ table td {
 .general-info {
     margin: 2rem .5rem;
     border: 5px solid black;
-    padding: .5rem 2rem .5rem -1rem;
+    padding: .5rem 2rem .5rem 0rem;
     border-radius: 5px;
     background-image: linear-gradient(rgba(255, 120, 90, 0.5), rgba(255, 120, 90, 0.2))
 }
