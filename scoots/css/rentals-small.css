@@ -2,10 +2,10 @@
 
 /*-----FONTS-----*/
 
-h1, h2, h3, button {
+h1, h2, h3, button, th {
     font-family: 'Concert One', cursive;
 }
-p, nav, li, a, label, figcaption {
+p, nav, li, a, label, figcaption, td {
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 

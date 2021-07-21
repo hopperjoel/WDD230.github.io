@@ -50,29 +50,17 @@ nav ul li.active a {
 }
 nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
 
-.reservation-btn {
-  background: rgba(255, 120, 90, 0.8);
-  border-radius: 3px;
-  width: 20%;
-  height: 4rem;
-  padding: .5rem;
-  float: right;
-  text-align: center;
-  font-weight: 600;
-}
-.reservation-btn a {
-  text-decoration: none;
-  color: white;
-}
-.reservation-btn:hover {
-  background: black;
-  color: black;
-}
+
 .phone {
   display:none;
 }
   /*--------MAIN-------*/
   
+  .map {
+      max-width: 40rem;
+      max-height: 30rem;
+      margin: 2rem 0rem 4rem 3rem;
+  }
  
   
   /*-------HERO SLIDESHOW------*/

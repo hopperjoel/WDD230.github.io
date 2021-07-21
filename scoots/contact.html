@@ -7,20 +7,11 @@
   <meta name="description" content="Contact Subpage for Scoots Website - Assignment for WDD230
   at Brigham Young University - Idaho">
   <link rel="stylesheet" href="https://hopperjoel.github.io/WDD230.github.io/styles/normalize.css">
-  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 320px)" href="css/fish-haven-small.css">
-  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 481px)" href="css/fish-haven-medium.css">
-  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 1025px)" href="css/fish-haven-large.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 320px)" href="css/contact-small.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 481px)" href="css/contact-medium.css">
+  <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 1025px)" href="css/contact-large.css">
 </head>
 <body>
-  <header>
-    <figure class = "header-logo">
-      <img src="" alt="logo">
-    </figure>
-    <div class = "headings">
-      <h1>Scoots</h1>
-      <h3></h3>
-    </div>
-  </header>
   <nav>
     <button onclick="toggleMenu()"> &#9776;</button>
       <ul id="primaryNav" class="hide">
@@ -31,53 +22,73 @@
         <li class="active"> <a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+  <header>
+    <figure class = "header-logo">
+      <img src="images\scoots-logo.png" alt="logo">
+    </figure>
+    <div class = "headings">
+      <h2>Scooters, ATV's, and Jeep's</h2>
+    </div>
+  </header>
   <main>
-    <section class="contact-info">
-      <h1>Contact Us</h1>
-      <p>Gral Felipe Angeles 570<br>77010 San Miguel de Cozumel | Q.R., Mexico<br>contact@scootsrentals.com<br>
-        011-52-999-999-9999<br>Office Hours: 7:00-6:00 EST (UTC -5 hours)</p>
-    </section>
-    <section>
-      <h2>Rental Information</h2>
-      <p>
-        A $50 security deposit is required to confirm reservations.<br>
-        A valid drivers license is required in hand at time of rental.<br>
-        No one under 12 years of age is allowed to ride on the scooters.<br>
-        Fuel charge not included.<br>
-        Unlimited mileage.<br>
-        Liability insurance is free of charge.<br>
-        Reservations rate requires 24 hour prior notification.<br>
-        Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.<br>
-        Payment via Google Pay, cash, credit card, debit card, or PayPal.<br>
-        Rentals may be returned to either location.<br>
-    </p>
-    </section>
-    <form action="contact-confirmation.html" id="contact-form">
-      <fieldset>
-        <legend>Name</legend>
-            <label><input type="text" name="first-name" required>First</label>
-            <label><input type="text" name="last-name" required>Last</label>
-      </fieldset>
-      <fieldset>
-        <legend>Email</legend>
-          <input type="text" name="email" required placeholder="johndoe@gmail.com">
-      </fieldset>
-      <fieldset>
-        <legend>Booking Number</legend>
-          <input type="number" name="booking-number" id="booking-number">
-      </fieldset>
-    </form>
-    <textarea name="comment-box" form="contact-form" required>Message</textarea>
+    <div class="contact-content">
+      <section class="contact-info">
+        <h1>Contact Us</h1>
+        <p>Gral Felipe Angeles 570<br>77010 San Miguel de Cozumel | Q.R., Mexico<br><br>contact@scootsrentals.com<br>
+          011-52-999-999-9999<br><br>Office Hours: 7:00-6:00 EST (UTC -5 hours)</p>
+      </section>
+      <section class="rental-info">
+        <h1>Rental Information</h1>
+        <p>
+          A $50 security deposit is required to confirm reservations.<br>
+          A valid drivers license is required in hand at time of rental.<br>
+          No one under 12 years of age is allowed to ride on the scooters.<br>
+          Fuel charge not included.<br>
+          Unlimited mileage.<br>
+          Liability insurance is free of charge.<br>
+          Reservations rate requires 24 hour prior notification.<br>
+          Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.<br>
+          Payment via Google Pay, cash, credit card, debit card, or PayPal.<br>
+          Rentals may be returned to either location.<br>
+      </p>
+      </section>
+    </div>
+      <div class="contact">
+        <h1>Questions or Comments?</h1>
+      <form action="contact-confirmation.html" id="contact-form">
+        <fieldset class="name">
+          <legend>Name</legend>
+              <label class="top">First<input type="text" name="first-name" required></label>
+              <label class="top">Last<input type="text" name="last-name" required></label>
+        </fieldset>
+        <fieldset class="email">
+          <legend>Email</legend>
+            <input type="text" name="email" required placeholder="johndoe@gmail.com">
+        </fieldset>
+        <fieldset class="booking">
+          <legend>Booking Number</legend>
+            <input type="number" name="booking-number" id="booking-number">
+        </fieldset>
+        <div class="submit-button">
+          <input type="submit" value="Request Contact" class="submit-button">
+        </div>
+      </form>
+      <div class="message-box">
+        <legend class="text-area">Contact Message</legend>
+        <textarea name="comment-box" form="contact-form" placeholder="I need information on..." cols="40" rows="10"></textarea>
+      </div>
+    </div>
+   
 
-  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1aXBXuSw4gMRz70zdvM0JDPk2yeCNbxo6" width="640" height="480"></iframe>
+  <iframe class="map" src="https://www.google.com/maps/d/u/0/embed?mid=1aXBXuSw4gMRz70zdvM0JDPk2yeCNbxo6" width="640" height="480"></iframe>
 
 </main>
 <footer>
   <div class = "social-media">
-      <a href="https://www.facebook.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/facebook.png" alt="facebook-icon"></a>
-      <a href="https://www.twitter.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/twitter.png" alt="instagram-icon"></a>
-      <a href="https://www.youtube.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/youtube.png" alt="youtube-icon"></a>
-      <a href="https://www.youtube.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/youtube.png" alt="trip-advisor-icon"></a>
+      <a href="https://www.facebook.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/scoots/images/facebook-icon.png" alt="facebook-icon"></a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/scoots/images/instagram-icon.png" alt="instagram-icon"></a>
+      <a href="https://www.youtube.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/scoots/images/youtube-icon.png" alt="youtube-icon"></a>
+      <a href="https://www.tripadvisor.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/scoots/images/tripadvisor.png" alt="trip-advisor-icon"></a>
   </div>
   <p>Scoots Motor Rentals | &copy;BYU-I 2021 <br> 011-52-999-999-9999 <br> contact@scootsmotors.com</p>
   <p>Joel Hopper | BYU-Idaho <span id="datetime"></span><br>
