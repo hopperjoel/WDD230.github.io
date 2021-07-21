@@ -12,35 +12,37 @@
   <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 1025px)" href="css/reservations-large.css">
 </head>
 <body>
-  <header>
-    <figure class = "header-logo">
-      <img src="" alt="logo">
-    </figure>
-    <div class = "headings">
-      <h1>Scoots</h1>
-      <h3></h3>
-    </div>
-  </header>
-  <nav>
+  <nav id="nav-solid" class="hide"><!--Need to make navigation bar sticky with opacity-->
     <button onclick="toggleMenu()"> &#9776;</button>
-      <ul id="primaryNav" class="hide">
-        <li> <a href="index.html">Home</a></li>
-        <li> <a href="rentals.html">Rentals</a></li>
-        <li class="active"> <a href="reservations.html">Reservations</a></li>
-        <li> <a href="tours.html">Tours</a></li>
-        <li> <a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rentals.html">Rentals</a></li>
+        <li class="active"><a href="reservations.html">Reservations</a></li>
+        <li><a href="tours.html">Tours</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <!--Need to add a phone number item here-->
+        <li class="phone"><a href="tel:011-52-999-999-9999"></a>011-52-999-999-9999</li>
+    </ul>
+    <div class="reservation-btn"><a href="reservations.html" class="btn">Reserve Now!</a></div>
+</nav>
+<header>
+<figure class = "header-logo">
+  <img src="images\scoots-logo.png" alt="logo">
+</figure>
+<div class = "headings">
+  <h2>Scooters, ATV's, and Jeep's</h2>
+</div>
+</header>
   <main>
     <h2>Thank you for renting with us!</h2>
     <p>A confirmation code will be sent to your email shortly.</p>
 </main>
 <footer>
   <div class = "social-media">
-      <a href="https://www.facebook.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/facebook.png" alt="facebook-icon"></a>
-      <a href="https://www.twitter.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/twitter.png" alt="instagram-icon"></a>
-      <a href="https://www.youtube.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/youtube.png" alt="youtube-icon"></a>
-      <a href="https://www.youtube.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/weather/images/youtube.png" alt="trip-advisor-icon"></a>
+      <a href="https://www.facebook.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/scoots/images/facebook-icon.png" alt="facebook-icon"></a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/scoots/images/instagram-icon.png" alt="instagram-icon"></a>
+      <a href="https://www.youtube.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/scoots/images/youtube-icon.png" alt="youtube-icon"></a>
+      <a href="https://www.tripadvisor.com/" target="_blank"><img src="https://hopperjoel.github.io/WDD230.github.io/scoots/images/tripadvisor.png" alt="trip-advisor-icon"></a>
   </div>
   <p>Scoots Motor Rentals | &copy;BYU-I 2021 <br> 011-52-999-999-9999 <br> contact@scootsmotors.com</p>
   <p>Joel Hopper | BYU-Idaho <span id="datetime"></span><br>

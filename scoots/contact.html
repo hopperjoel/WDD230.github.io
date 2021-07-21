@@ -12,24 +12,27 @@
   <link rel="stylesheet" type="text/css" media="only screen and (min-device-width: 1025px)" href="css/contact-large.css">
 </head>
 <body>
-  <nav>
+  <nav id="nav-solid" class="hide"><!--Need to make navigation bar sticky with opacity-->
     <button onclick="toggleMenu()"> &#9776;</button>
-      <ul id="primaryNav" class="hide">
-        <li> <a href="index.html">Home</a></li>
-        <li> <a href="rentals.html">Rentals</a></li>
-        <li> <a href="reservations.html">Reservations</a></li>
-        <li> <a href="tours.html">Tours</a></li>
-        <li class="active"> <a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  <header>
-    <figure class = "header-logo">
-      <img src="images\scoots-logo.png" alt="logo">
-    </figure>
-    <div class = "headings">
-      <h2>Scooters, ATV's, and Jeep's</h2>
-    </div>
-  </header>
+    <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rentals.html">Rentals</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="tours.html">Tours</a></li>
+        <li  class="active"><a href="contact.html">Contact</a></li>
+        <!--Need to add a phone number item here-->
+        <li class="phone"><a href="tel:011-52-999-999-9999"></a>011-52-999-999-9999</li>
+    </ul>
+    <div class="reservation-btn"><a href="reservations.html" class="btn">Reserve Now!</a></div>
+</nav>
+<header>
+  <figure class = "header-logo">
+    <img src="images\scoots-logo.png" alt="logo">
+  </figure>
+  <div class = "headings">
+    <h2>Scooters, ATV's, and Jeep's</h2>
+  </div>
+</header>
   <main>
     <div class="contact-content">
       <section class="contact-info">
